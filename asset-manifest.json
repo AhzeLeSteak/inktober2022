@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/inktober2/static/css/main.59abd268.css",
+    "main.js": "/inktober2/static/js/main.93738a6a.js",
+    "static/js/787.2fb93474.chunk.js": "/inktober2/static/js/787.2fb93474.chunk.js",
+    "static/media/sonic-the-hedgehog-2-hud-font.ttf": "/inktober2/static/media/sonic-the-hedgehog-2-hud-font.daaf6a5d15c2458a6603.ttf",
+    "static/media/sonic.gif": "/inktober2/static/media/sonic.3dbef5179afb9d1fb285.gif",
+    "static/media/eggman.gif": "/inktober2/static/media/eggman.d1b57b55a03a8c565b3e.gif",
+    "index.html": "/inktober2/index.html",
+    "main.59abd268.css.map": "/inktober2/static/css/main.59abd268.css.map",
+    "main.93738a6a.js.map": "/inktober2/static/js/main.93738a6a.js.map",
+    "787.2fb93474.chunk.js.map": "/inktober2/static/js/787.2fb93474.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59abd268.css",
+    "static/js/main.93738a6a.js"
+  ]
+}
