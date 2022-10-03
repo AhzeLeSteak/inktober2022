@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/inktober2/static/css/main.12b42d5b.css",
-    "main.js": "/inktober2/static/js/main.f07e7e30.js",
-    "static/js/787.2fb93474.chunk.js": "/inktober2/static/js/787.2fb93474.chunk.js",
-    "static/media/Milletun.otf": "/inktober2/static/media/Milletun.a8bd31df9a09787f79fc.otf",
-    "static/media/manlymenbb_bold.ttf": "/inktober2/static/media/manlymenbb_bold.2fab82c7a14e844777fa.ttf",
-    "static/media/inktober_logo.png": "/inktober2/static/media/inktober_logo.b26068949b7811663bc6.png",
-    "static/media/sonic-the-hedgehog-2-hud-font.ttf": "/inktober2/static/media/sonic-the-hedgehog-2-hud-font.daaf6a5d15c2458a6603.ttf",
-    "static/media/sonic.gif": "/inktober2/static/media/sonic.3dbef5179afb9d1fb285.gif",
-    "static/media/eggman.gif": "/inktober2/static/media/eggman.d1b57b55a03a8c565b3e.gif",
-    "static/media/gargoyle.svg": "/inktober2/static/media/gargoyle.935b489eccbac804e176e3fb4b5fb50b.svg",
-    "index.html": "/inktober2/index.html",
-    "main.12b42d5b.css.map": "/inktober2/static/css/main.12b42d5b.css.map",
-    "main.f07e7e30.js.map": "/inktober2/static/js/main.f07e7e30.js.map",
-    "787.2fb93474.chunk.js.map": "/inktober2/static/js/787.2fb93474.chunk.js.map"
+    "main.css": "/inktober2022/static/css/main.51ab3c6b.css",
+    "main.js": "/inktober2022/static/js/main.7c415a1a.js",
+    "static/js/787.2fb93474.chunk.js": "/inktober2022/static/js/787.2fb93474.chunk.js",
+    "static/media/Milletun.otf": "/inktober2022/static/media/Milletun.a8bd31df9a09787f79fc.otf",
+    "static/media/manlymenbb_bold.ttf": "/inktober2022/static/media/manlymenbb_bold.2fab82c7a14e844777fa.ttf",
+    "static/media/inktober_logo.png": "/inktober2022/static/media/inktober_logo.b26068949b7811663bc6.png",
+    "static/media/sonic-the-hedgehog-2-hud-font.ttf": "/inktober2022/static/media/sonic-the-hedgehog-2-hud-font.daaf6a5d15c2458a6603.ttf",
+    "static/media/sonic.gif": "/inktober2022/static/media/sonic.3dbef5179afb9d1fb285.gif",
+    "static/media/eggman.gif": "/inktober2022/static/media/eggman.d1b57b55a03a8c565b3e.gif",
+    "static/media/gargoyle.svg": "/inktober2022/static/media/gargoyle.935b489eccbac804e176e3fb4b5fb50b.svg",
+    "index.html": "/inktober2022/index.html",
+    "main.51ab3c6b.css.map": "/inktober2022/static/css/main.51ab3c6b.css.map",
+    "main.7c415a1a.js.map": "/inktober2022/static/js/main.7c415a1a.js.map",
+    "787.2fb93474.chunk.js.map": "/inktober2022/static/js/787.2fb93474.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12b42d5b.css",
-    "static/js/main.f07e7e30.js"
+    "static/css/main.51ab3c6b.css",
+    "static/js/main.7c415a1a.js"
   ]
 }
