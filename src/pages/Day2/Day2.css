@@ -1,10 +1,10 @@
-#container{
+#container2{
     width: 100vw;
     height: 100vh;
     position: fixed;
 }
 
-.parallax {
+#container2 .parallax {
     position: fixed;
     width: 200vw;
     height: 100%;
@@ -12,13 +12,13 @@
     background-repeat: repeat;
 }
 
-#front{
+#container2 #front{
     background-image: url("/public/front.png");
     animation: slide 2s linear infinite;
 
 }
 
-#back{
+#container2 #back{
     background-image: url("/public/back.png");
     animation: slide 3s linear infinite;
 
@@ -34,7 +34,7 @@
 }
 
 
-#sonic{
+#container2 #sonic{
     background-image: url("/public/sonic.gif");
     width: 130px;
     height: 152px;
@@ -45,7 +45,7 @@
     background-size: contain;
 }
 
-#eggman{
+#container2 #eggman{
     background-image: url("/public/eggman.gif");
     width: 233px;
     height: 225px;
@@ -61,7 +61,7 @@
     src:  url('../../fonts/sonic-the-hedgehog-2-hud-font.ttf') format('truetype');
 }
 
-#score{
+#container2 #score{
     position: fixed;
     width: 50vw;
     top: 0;
@@ -72,6 +72,6 @@
     text-shadow: #000000 0px 5px 0px;
 }
 
-.yellow{
+#container2 .yellow{
     color: yellow;
 }

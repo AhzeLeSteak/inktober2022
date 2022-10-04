@@ -34,9 +34,9 @@ function Day2() {
     }
 
     const spacesCt = 6 - rings.toString().length;
-    const spaces = new Array(spacesCt).fill(<>&nbsp;</>)
+    const spaces = new Array(spacesCt).fill(0)
 
-    return <div id="container" onClick={() => setRings(r => r+1)} onContextMenu={onContextMenu} onMouseMove={parallax}>
+    return <div id="container2" onClick={() => setRings(r => r+1)} onContextMenu={onContextMenu} onMouseMove={parallax}>
         <div id="back" className="parallax"></div>
         <div id="front" className="parallax"></div>
         <div id="sonic"></div>
@@ -44,7 +44,7 @@ function Day2() {
         <em id="score">
             <span className="yellow">SCORE</span> &nbsp;02102022<br/>
             <span className="yellow">TIME</span> &nbsp; {seconds < 600 && '0'}{Math.floor(seconds/60)}:{seconds%60 < 10 && '0'}{seconds%60}<br/>
-            <span className="yellow">RINGS</span>  {spaces.map(e => e)}{rings}
+            <span className="yellow">RINGS</span>  {spaces.map((_, i) => <span key={i}>&nbsp;</span>)}{rings}
         </em>
     </div>;
 }

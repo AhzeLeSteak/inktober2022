@@ -1,0 +1,34 @@
+.container3 img{
+    position: absolute;
+    top: 0;
+    left: calc(50vw - 50vh*256/224);
+    height: 100vh;
+    image-rendering: pixelated;
+}
+
+.container3 .animate img{
+    animation: shake 0.1s infinite;
+    animation-timing-function: steps(1, end);
+}
+
+
+.container3 .animate{
+    animation: godown 8s linear infinite;
+}
+
+body{
+    --pixel: calc(100%/260);
+    --right : var(--pixel);
+    --left : calc(var(--pixel)*-1);
+}
+
+@keyframes shake {
+    0% { transform: translateX(var(--left)); }
+    50% { transform: translateX(0); }
+    100% { transform: translateX(var(--left)); }
+}
+
+@keyframes godown {
+    0% { transform: translateY(0) }
+    100% { transform: translateY(35vh) }
+}
