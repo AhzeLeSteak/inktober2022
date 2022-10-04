@@ -1,6 +1,6 @@
 {
-  "short_name": "Ahze - Inktober2022",
-  "name": "Inktober 2022",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,6 +21,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "orientation": "landscape"
+  "background_color": "#ffffff"
 }
