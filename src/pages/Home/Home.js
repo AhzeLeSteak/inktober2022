@@ -42,7 +42,7 @@ function Home(){
 
     const navigate = useNavigate();
     let i = 1;
-    const day = 3;
+    const day = 4;
     themes.length = day;
 
     return <div>
