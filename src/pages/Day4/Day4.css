@@ -6,7 +6,7 @@
     --container-left: calc(50vw - var(--container-width)/2);
 
     --figure-names-height: calc(100vh*81/var(--img-height));
-    --figure-names-width: calc(var(--container-width)*136/var(--img-width));
+    --figure-names-width: calc(var(--container-width)*153/var(--img-width));
 
     position: fixed;
     height: 100vh;
@@ -34,27 +34,50 @@
     width: var(--figure-names-width);
 
     top: calc(100vh*31/var(--img-height));
-    left: calc(var(--container-left) + var(--container-width)*88/var(--img-width));
+    left: calc(var(--container-left) + var(--container-width)*84/var(--img-width));
 
     display: grid;
-    grid-template: repeat(5, 1fr) / 1fr;
+    grid-template: repeat(136, 1fr) / 1fr;
 
     text-align: left;
     vertical-align: middle;
     color: white;
     font-family: TLOZ;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container4 #figureNames::-webkit-scrollbar {
+    width: calc(var(--container-width)*9/var(--img-width));
+}
+
+/* Track */
+.container4 #figureNames::-webkit-scrollbar-track {
+    display: none;
+}
+
+.container4 #figureNames::-webkit-scrollbar-thumb {
+    height: calc(var(--container-width)*4/var(--img-width));
+    background-image: url("/public/day4/scroll.png");
+    background-size: 100%;
+    image-rendering: pixelated;
 }
 
 .container4 #figureNames div{
-    font-size: calc(var(--figure-names-height)/10)
+    font-size: calc(var(--figure-names-height)/10);
+    position: relative;
+}
+
+.container4 #figureNames div span{
+    padding-left: calc(var(--container-width)*5/var(--img-width));
+    position: relative;
 }
 
 .container4 #selection{
-    position: fixed;
+    display: flex;
     width: calc(var(--container-width)*143/var(--img-width));
-    --position: 2;
-    top: calc(100vh*31/var(--img-height) + var(--figure-names-height)*var(--position)/5);
-    left: calc(var(--container-left) + var(--container-width)*84/var(--img-width));
+    position: absolute;
 }
 
 .container4 .arrow{
@@ -79,8 +102,6 @@
     left: calc(var(--container-left) + var(--container-width)*228/var(--img-width));
 
     top: calc(100vh*31/var(--img-height) + var(--figure-names-height)*var(--position));
-    width: calc(var(--container-width)*9/var(--img-width));
-    height: calc(var(--container-width)*4/var(--img-width));
 }
 
 .container4 #figure_img{
@@ -109,5 +130,6 @@
     font-size: calc(var(--figure-names-height)/10);
     color: #606070;
     text-align: left;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
