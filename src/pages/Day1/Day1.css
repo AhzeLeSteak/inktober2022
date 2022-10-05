@@ -1,4 +1,4 @@
-body{
+.container{
     --color: #f3f3f3;
     background-color: var(--color);
     --first-height: 10vh;

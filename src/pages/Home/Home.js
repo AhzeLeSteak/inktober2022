@@ -42,7 +42,7 @@ function Home({isMobile}){
 
     const navigate = useNavigate();
     let i = 1;
-    const day = 33;
+    const day = 4;
     themes.length = day;
 
 
@@ -59,8 +59,8 @@ function Home({isMobile}){
                     </div>
                 </>
                 :
-                themes.map((theme) =>
-                    <div key={i} className="card" onClick={() => navigate(theme)}>
+                themes.map((theme, j) =>
+                    <div key={j} className="card" onClick={() => navigate(theme)}>
                         {theme && <>{i++}.{theme}</>}
                     </div>
                 )

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body{
+    background-color: #000001;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#home{
+    image-rendering: pixelated;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 9999;
 }

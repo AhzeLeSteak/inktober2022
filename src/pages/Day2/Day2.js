@@ -1,12 +1,15 @@
 import './Day2.css'
 import '../../fonts/sonic-the-hedgehog-2-hud-font.ttf'
 import {useEffect, useState} from "react";
+import home from "../../home.png";
+import {useNavigate} from "react-router-dom";
 
 //const ratio_front = 0.005;
 const ratio_back = 0.005;
 
 //Scurry
 function Day2() {
+    const navigate = useNavigate();
 
     const [rings, setRings] = useState(0);
     const [seconds, setSeconds] = useState(0);
@@ -37,6 +40,8 @@ function Day2() {
     const spaces = new Array(spacesCt).fill(0)
 
     return <div id="container2" onClick={() => setRings(r => r+1)} onContextMenu={onContextMenu} onMouseMove={parallax}>
+        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
+
         <div id="back" className="parallax"></div>
         <div id="front" className="parallax"></div>
         <div id="sonic"></div>

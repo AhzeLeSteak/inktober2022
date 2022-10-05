@@ -1,12 +1,11 @@
 import './App.css';
-import './fonts/sonic-the-hedgehog-2-hud-font.ttf'
-import Day2 from "./pages/Day2/Day2";
-import Day1 from "./pages/Day1/Day1";
+import {useEffect, useState} from "react";
 import {HashRouter, Navigate, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home/Home";
+import Day2 from "./pages/Day2/Day2";
+import Day1 from "./pages/Day1/Day1";
 import {Day3} from "./pages/Day3/Day3";
 import {Day4} from "./pages/Day4/Day4";
-import {useEffect, useState} from "react";
 
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
     const [width, setWidth] = useState(window.innerWidth);
 
     const handleWindowSizeChange = () => setWidth(window.innerWidth);
-
     useEffect(() => {
         window.addEventListener('resize', handleWindowSizeChange);
         return () => window.removeEventListener('resize', handleWindowSizeChange);
