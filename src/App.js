@@ -6,21 +6,34 @@ import {HashRouter, Navigate, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import {Day3} from "./pages/Day3/Day3";
 import {Day4} from "./pages/Day4/Day4";
+import {useEffect, useState} from "react";
 
 
 function App() {
 
+    const [width, setWidth] = useState(window.innerWidth);
+
+    const handleWindowSizeChange = () => setWidth(window.innerWidth);
+
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => window.removeEventListener('resize', handleWindowSizeChange);
+    }, []);
+
+    const isMobile = width <= 1100;
 
 
     return <div className="App">
         <div className="background"></div>
         <HashRouter>
             <Routes>
-                <Route path={'/'} element={<Home/>}/>
-                <Route path={'/gargoyle'} element={<Day1/>}/>
-                <Route path={'/scurry'} element={<Day2/>}/>
-                <Route path={'/bat'} element={<Day3/>}/>
-                <Route path={'/scallop'} element={<Day4/>}/>
+                {!isMobile && <>
+                    <Route path={'/gargoyle'} element={<Day1/>}/>
+                    <Route path={'/scurry'} element={<Day2/>}/>
+                    <Route path={'/bat'} element={<Day3/>}/>
+                    <Route path={'/scallop'} element={<Day4/>}/>
+                </>}
+                <Route path={'/'} element={<Home isMobile={isMobile}/>}/>
                 <Route path={'/*'} element={<Navigate to={'/'}/>}/>
             </Routes>
         </HashRouter>

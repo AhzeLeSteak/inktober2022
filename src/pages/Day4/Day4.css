@@ -133,3 +133,43 @@
     overflow-y: scroll;
     overflow-x: hidden;
 }
+
+
+.container4 #figurine_number{
+    position: fixed;
+    left: calc(var(--container-left) + var(--container-width)*89/var(--img-width));
+    top: calc(var(--container-width)*11/var(--img-width));
+
+    width: calc(var(--container-width)*22/var(--img-width));
+    height: calc(var(--container-width)*12/var(--img-width));
+
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.container4 #figurine_number img{
+    width: 100%;
+}
+
+.container4 #language{
+    font-family: TLOZ;
+    color: white;
+    font-size: calc(var(--figure-names-height)/13);
+
+
+    position: fixed;
+    left: calc(var(--container-left) + var(--container-width)*166/var(--img-width));
+    top: calc(var(--container-width)*9/var(--img-width));
+
+    width: calc(var(--container-width)*42/var(--img-width));
+    height: calc(var(--container-width)*12/var(--img-width));
+
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    text-shadow: #000000 0px 5px 0px;
+    gap: calc(var(--container-width)*5/var(--img-width))
+}
+
+.container4 #language div{
+    cursor: pointer;
+}

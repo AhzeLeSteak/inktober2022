@@ -15,10 +15,10 @@ export function Day3(){
 
 
     return <div className="container3" onClick={click}>
-        <img src={Background}/>
+        <img alt="" src={Background}/>
         <div className={animate ? 'animate' : ''}>
-            <img src={Castle}/>
+            <img alt="" src={Castle}/>
         </div>
-        <img src={Front}/>
+        <img alt="" src={Front}/>
     </div>
 }

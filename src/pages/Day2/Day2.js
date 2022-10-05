@@ -2,7 +2,7 @@ import './Day2.css'
 import '../../fonts/sonic-the-hedgehog-2-hud-font.ttf'
 import {useEffect, useState} from "react";
 
-const ratio_front = 0.005;
+//const ratio_front = 0.005;
 const ratio_back = 0.005;
 
 //Scurry
@@ -22,8 +22,8 @@ function Day2() {
         let _h = window.innerHeight/2;
         let _mouseX = e.clientX;
         let _mouseY = e.clientY;
-        let depth_front = `${50 - (_mouseX - _w) * ratio_front}% ${50 - (_mouseY - _h) * ratio_front}%`;
         let depth_back = `${50 - (_mouseX - _w) * ratio_back}% ${50 - (_mouseY - _h) * ratio_back}%`;
+        //let depth_front = `${50 - (_mouseX - _w) * ratio_front}% ${50 - (_mouseY - _h) * ratio_front}%`;
         //document.getElementById('front').style.backgroundPosition = depth_front;
         document.getElementById('back').style.backgroundPosition = depth_back;
     }
