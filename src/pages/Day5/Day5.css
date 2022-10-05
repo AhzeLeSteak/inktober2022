@@ -31,15 +31,13 @@
   border: solid 1px #8d5901;
 }
 
-#day5 {
-  overflow: hidden;
-}
 #day5 #pseudo {
   background-image: url("/public/day5/spawn.png");
   background-size: 100%;
   color: white;
-  padding-bottom: 100vh;
-  padding-top: 10vh;
+  padding-bottom: 70vh;
+  padding-top: 20vh;
+  height: 10vh;
 }
 
 @font-face {

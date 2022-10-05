@@ -46,7 +46,7 @@ export const Day5 = () => {
                             hour = '0' + hour;
                         let minute = date.getMinutes();
                         if(minute < 10)
-                            hour = '0' + minute;
+                            minute = '0' + minute;
                         return <div key={i}>
                             [{hour}:{minute}]
                             <span className="author">{message.author}:</span>
