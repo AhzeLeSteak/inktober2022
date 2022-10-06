@@ -1,0 +1,50 @@
+#container6 {
+  background-image: url("/public/day6/background.png");
+  background-size: 100%;
+  image-rendering: pixelated;
+  position: fixed;
+  height: 100vh;
+  --container-width: calc(100vh*256/192);
+  width: var(--container-width);
+  top: 0;
+  left: calc(50vw - var(--container-width) / 2);
+}
+#container6 #face {
+  image-rendering: pixelated;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  height: 33.3333333333vh;
+  z-index: 999;
+}
+#container6 #message {
+  image-rendering: pixelated;
+  position: fixed;
+  top: 2vh;
+  left: 50vw;
+  transform: translate(-50%, 0%);
+  height: 14.5833333333vh;
+  z-index: 999;
+}
+#container6 .petal {
+  image-rendering: pixelated;
+  cursor: pointer;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  height: 33.3333333333vh;
+  transform: translate(-50%, -100%) rotateZ(calc(1deg * var(--angle)));
+  transform-origin: bottom center;
+}
+#container6 .petal.falling {
+  animation: fall 7s forwards;
+  z-index: -1;
+}
+@keyframes fall {
+  100% {
+    transform: translateY(60vh);
+  }
+}
+
+/*# sourceMappingURL=Day6.css.map */

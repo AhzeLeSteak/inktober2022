@@ -42,8 +42,7 @@ function Home({isMobile}){
 
     const navigate = useNavigate();
     let i = 1;
-    const day = 5;
-    themes.length = day;
+    themes.length = 6;
 
 
     return <div>

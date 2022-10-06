@@ -13,13 +13,13 @@
 }
 
 #container2 #front{
-    background-image: url("/public/front.png");
+    background-image: url("/public/day2/front.png");
     animation: slide 2s linear infinite;
 
 }
 
 #container2 #back{
-    background-image: url("/public/back.png");
+    background-image: url("/public/day2/back.png");
     animation: slide 3s linear infinite;
 
 }
@@ -35,7 +35,7 @@
 
 
 #container2 #sonic{
-    background-image: url("/public/sonic.gif");
+    background-image: url("/public/day2/sonic.gif");
     width: 130px;
     height: 152px;
     position: fixed;
@@ -46,7 +46,7 @@
 }
 
 #container2 #eggman{
-    background-image: url("/public/eggman.gif");
+    background-image: url("/public/day2/eggman.gif");
     width: 233px;
     height: 225px;
     position: fixed;
