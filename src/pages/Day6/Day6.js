@@ -24,7 +24,7 @@ export const Day6 = () => {
             happyge: strike ? 'really_loves_me' : 'loves_me',
             sadge: strike ? 'really_loves_me_not' : 'loves_me_not'
         }[emotion];
-    }, [emotion]);
+    }, [emotion, rowCounter]);
 
     const reset = (e) => {
         if(lastEmotion === e)
@@ -75,6 +75,7 @@ export const Day6 = () => {
 
             <Sound url={ost}
                    playStatus={Sound.status.PLAYING}
+                   loop={true}
             />
 
 

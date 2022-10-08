@@ -8,6 +8,7 @@ import {Day3} from "./pages/Day3/Day3";
 import {Day4} from "./pages/Day4/Day4";
 import Day5 from "./pages/Day5/Day5";
 import {Day6} from "./pages/Day6/Day6";
+import {Day7} from "./pages/Day7/Day7";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                     <Route path={'/scallop'} element={<Day4/>}/>
                     <Route path={'/flame'} element={<Day5/>}/>
                     <Route path={'/bouquet'} element={<Day6/>}/>
+                    <Route path={'/trip'} element={<Day7/>}/>
                 </>}
                 <Route path={'/'} element={<Home isMobile={isMobile}/>}/>
                 <Route path={'/*'} element={<Navigate to={'/'}/>}/>

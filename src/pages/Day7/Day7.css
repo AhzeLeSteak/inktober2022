@@ -1,0 +1,75 @@
+#container7 {
+  background-image: url("/public/day7/background.png");
+  background-size: 100%;
+  image-rendering: pixelated;
+  position: relative;
+  --width: calc(100vh*160/192);
+  --unit: calc(var(--width)/10);
+  height: 100vh;
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+  --angle: 10deg;
+  transform: rotateX(calc(360deg - var(--angle)));
+}
+#container7 img {
+  transform-origin: bottom center;
+  position: absolute;
+  width: var(--unit);
+}
+#container7 .shadow {
+  filter: brightness(0%);
+  transform: rotateX(calc(360deg - var(--angle))) skewX(calc(10deg + var(--angle) / -1.2));
+  height: calc(var(--unit));
+}
+#container7 .oak {
+  left: calc(var(--unit) * 5);
+  top: calc(var(--unit) * (2 + var(--sin)));
+}
+#container7 .red {
+  position: absolute;
+  width: var(--unit);
+  left: calc(var(--unit) * 5);
+  top: calc(var(--unit) * (3 + var(--sin)));
+}
+#container7 .armoire {
+  left: calc(var(--unit) * var(--x));
+  top: calc(var(--unit) * var(--y));
+  width: calc(4 * var(--unit));
+}
+#container7 .armoire.shadow {
+  height: calc(var(--unit) * 2.5);
+}
+#container7 .ball {
+  position: absolute;
+  width: var(--unit);
+  left: calc(var(--unit) * (6 + var(--offset)));
+  top: calc(var(--unit) * 3);
+}
+#container7 #pk-img {
+  position: relative;
+  width: calc(var(--unit) * 3);
+  height: calc(var(--unit) * 3);
+  left: calc(var(--unit) * 0.5);
+  top: calc(var(--unit) * 0.5);
+  background-color: white;
+  border: 4px black solid;
+  border-radius: 10px;
+}
+#container7 #pk-img img {
+  width: 90%;
+  left: 5%;
+  top: 0;
+}
+
+#day7 {
+  position: absolute;
+}
+#day7 #text {
+  position: fixed;
+  bottom: 0;
+  width: 60vw;
+  left: 20vw;
+  image-rendering: pixelated;
+}
+
+/*# sourceMappingURL=Day7.css.map */
