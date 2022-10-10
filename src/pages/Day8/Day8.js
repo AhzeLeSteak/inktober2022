@@ -1,11 +1,13 @@
 import './Day8.css'
-import {useEffect, useMemo, useState} from "react";
+import {useMemo, useState} from "react";
 import {pkmns} from "./pkmns";
 import green_time from './green_time.png';
 import red_time from './red_time.png';
 import ok from './ok.png';
 import ko from './ko.png';
 import highscore from './highscore.png'
+import {useNavigate} from "react-router-dom";
+import home from "../../home.png";
 
 const excluded = [10, 13, 22, 23, 40, 49, 50, 69, 70, 71, 72, 73, 85, 86, 87, 88, 89, 90, 91, 92, 94, 99, 100, 101, 108, 109, 115, 116, 117, 118, 123,
     128, 129, 130, 131, 146, 147]
@@ -20,6 +22,7 @@ let interval;
 let timeout;
 
 export const Day8 = () => {
+    const navigate = useNavigate();
 
     const [manche, setManche] = useState(-1);
     const [printToGuess, setPrintToGuess] = useState(0);
@@ -140,10 +143,8 @@ export const Day8 = () => {
     const tempsRestant = useMemo(() => new Array(time.t).fill(0), [time]);
     const tempsEcoule = useMemo(() => new Array(TEMPS_MAX - time.t).fill(0), [time]);
 
-    useEffect(lancerJeu, []);
-
-
     return <div id="day8">
+        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container8">
             <div id="topscreen" className="screen">
@@ -170,14 +171,13 @@ export const Day8 = () => {
                 {playing && propositions.map(p => {
                     const [x, y] = pkIndexToFootPrintCoord(p);
                     return <div key={p} className="poke" onClick={() => choose(p)}>
-                        {p}
                         <span className="name">{pkmns[p]}</span>
-                        {tempsEcoule.length >= 0 && <img className="pp" src={`${process.env.PUBLIC_URL}/day8/pkmn/${p}.png`}/>}
-                        {tempsEcoule.length >= 0 && <img className="footprint" src={`${process.env.PUBLIC_URL}/day8/footprints/row-${y}-column-${x}.png`}/>}
+                        {tempsEcoule.length > 4 && <img className="pp" src={`${process.env.PUBLIC_URL}/day8/pkmn/${p}.png`}/>}
+                        {tempsEcoule.length > 8 && <img className="footprint" src={`${process.env.PUBLIC_URL}/day8/footprints/row-${y}-column-${x}.png`}/>}
                         {choice === p && <img id="result" src={choice === printToGuess ? ok : ko}/> }
                     </div>;
                 })}
-                <span id="text">{time.t > 0 ? text : 'Out of time!'}</span>
+                <span id="text">{time.t === 0 && playing ? 'Out of time!' : text}</span>
             </div>
         </div>
 
