@@ -11,6 +11,7 @@ import {Day6} from "./pages/Day6/Day6";
 import {Day7} from "./pages/Day7/Day7";
 import {Day8} from "./pages/Day8/Day8";
 import {Day9} from "./pages/day9/Day9";
+import {Day10} from "./pages/day10/Day10";
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
                     <Route path={'/trip'} element={<Day7/>}/>
                     <Route path={'/match'} element={<Day8/>}/>
                     <Route path={'/nest'} element={<Day9/>}/>
+                    <Route path={'/crabby'} element={<Day10/>}/>
                 </>}
                 <Route path={'/'} element={<Home isMobile={isMobile}/>}/>
                 <Route path={'/*'} element={<Navigate to={'/'}/>}/>
