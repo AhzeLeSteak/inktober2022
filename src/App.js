@@ -10,6 +10,7 @@ import Day5 from "./pages/Day5/Day5";
 import {Day6} from "./pages/Day6/Day6";
 import {Day7} from "./pages/Day7/Day7";
 import {Day8} from "./pages/Day8/Day8";
+import {Day9} from "./pages/day9/Day9";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
                     <Route path={'/bouquet'} element={<Day6/>}/>
                     <Route path={'/trip'} element={<Day7/>}/>
                     <Route path={'/match'} element={<Day8/>}/>
+                    <Route path={'/nest'} element={<Day9/>}/>
                 </>}
                 <Route path={'/'} element={<Home isMobile={isMobile}/>}/>
                 <Route path={'/*'} element={<Navigate to={'/'}/>}/>

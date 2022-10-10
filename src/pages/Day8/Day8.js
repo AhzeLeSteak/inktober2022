@@ -87,9 +87,7 @@ export const Day8 = () => {
 
 
         interval = setInterval(() => {
-            let time;
             setTime(ti => {
-                time = ti;
                 if (ti.t === 0) return {t: 0, waiting: false};
                 if (ti.waiting) return {t: ti.t, waiting: true};
                 return {t: ti.t-1, waiting: false};
@@ -153,14 +151,14 @@ export const Day8 = () => {
                     <>
                         <span id="manche">{manche}</span>
                         <span id="score">{displayScore}</span>
-                        <img src={`${process.env.PUBLIC_URL}/day8/footprints/row-${printY}-column-${printX}.png`} id="footprints"/>
+                        <img alt="" src={`${process.env.PUBLIC_URL}/day8/footprints/row-${printY}-column-${printX}.png`} id="footprints"/>
                         <div id="temps">
-                            {tempsRestant.map((_, i) => <img key={i} src={green_time}/> )}
-                            {tempsEcoule.map((_, i) => <img key={i} src={red_time}/> )}
+                            {tempsRestant.map((_, i) => <img alt="" key={i} src={green_time}/> )}
+                            {tempsEcoule.map((_, i) =>  <img alt="" key={i} src={red_time}/> )}
                         </div>
                     </> :
                     <div>
-                        <img src={highscore} id="highscore"/>
+                        <img alt="" src={highscore} id="highscore"/>
                         <div id="scores">
                             {bestScores.map((sc, i) => <span key={i}>{sc}</span>)}
                         </div>
@@ -172,9 +170,9 @@ export const Day8 = () => {
                     const [x, y] = pkIndexToFootPrintCoord(p);
                     return <div key={p} className="poke" onClick={() => choose(p)}>
                         <span className="name">{pkmns[p]}</span>
-                        {tempsEcoule.length > 4 && <img className="pp" src={`${process.env.PUBLIC_URL}/day8/pkmn/${p}.png`}/>}
-                        {tempsEcoule.length > 8 && <img className="footprint" src={`${process.env.PUBLIC_URL}/day8/footprints/row-${y}-column-${x}.png`}/>}
-                        {choice === p && <img id="result" src={choice === printToGuess ? ok : ko}/> }
+                        {tempsEcoule.length > 4 && <img alt="" className="pp" src={`${process.env.PUBLIC_URL}/day8/pkmn/${p}.png`}/>}
+                        {tempsEcoule.length > 8 && <img alt="" className="footprint" src={`${process.env.PUBLIC_URL}/day8/footprints/row-${y}-column-${x}.png`}/>}
+                        {choice === p && <img alt="" id="result" src={choice === printToGuess ? ok : ko}/> }
                     </div>;
                 })}
                 <span id="text">{time.t === 0 && playing ? 'Out of time!' : text}</span>
