@@ -50,13 +50,12 @@ export const Day7 = () => {
             </div>}
 
 
-            <img src={armoire} className="armoire shadow" style={{'--x': 6, '--y': 4.5}}/>
-            <img src={armoire} className="armoire shadow" style={{'--x': 0, '--y': 4.5}}/>
+            <img alt="" src={armoire} className="armoire shadow" style={{'--x': 6, '--y': 4.5}}/>
+            <img alt="" src={armoire} className="armoire shadow" style={{'--x': 0, '--y': 4.5}}/>
 
-
-            <img src={armoire} className="armoire" style={{'--x': 6, '--y': 0}}/>
-            <img src={armoire} className="armoire" style={{'--x': 0, '--y': 5}}/>
-            <img src={armoire} className="armoire" style={{'--x': 6, '--y': 5}}/>
+            <img alt="" src={armoire} className="armoire" style={{'--x': 6, '--y': 0}}/>
+            <img alt="" src={armoire} className="armoire" style={{'--x': 0, '--y': 5}}/>
+            <img alt="" src={armoire} className="armoire" style={{'--x': 6, '--y': 5}}/>
 
             <img src={oak} className="oak shadow" alt=""/>
             <img src={oak} className="oak char" alt=""/>
@@ -78,7 +77,7 @@ export const Day7 = () => {
             />
 
         </div>
-        <img src={text} id="text"/>
+        <img src={text} id="text" alt=""/>
 
     </div>
 }
