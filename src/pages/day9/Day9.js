@@ -3,14 +3,30 @@ import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import home from "../../home.png";
 
-const pkmns = ['bulb', 'charm', 'squirtle', 'chikorita', 'cynda', 'kaiminus', 'treecko', 'mudkip', 'torchic', 'turtwig', 'piplup', 'chimchar', 'pikachu', 'meowth', 'skitty', 'munchlax'];
+const pkmns = ['bulb', 'charm', 'squirtle',
+    'chikorita', 'cynda', 'kaiminus',
+    'treecko', 'mudkip', 'torchic',
+    'turtwig', 'piplup', 'chimchar',
+    'pikachu', 'vulpix', 'meowth',
+    'eevee', 'phanpy', 'skitty',
+    'linxy', 'munchlax', 'riolu'];
+
+const ratio = [20, 21, 22,
+                18, 16, 22,
+                24, 18, 24,
+                20, 20, 20,
+                24, 19, 22,
+                26, 22, 24,
+                28, 24, 21]
 
 export const Day9 = () => {
 
     const navigate = useNavigate();
-    const [pkmn, setPkmn] = useState(9);
-    const [pkmn2, setPkmn2] = useState(7);
+    const [pkmnL, setPkmnL] = useState(9);
+    const [pkmnR, setPkmnR] = useState(7);
     const [frame, setFrame] = useState(0);
+    const ratioL = ratio[pkmnL] ?? 20;
+    const ratioR = ratio[pkmnR] ?? 20;
 
     useEffect(() => {
         const interval = setInterval(() => setFrame(f => 1-f), 1500);
@@ -23,16 +39,16 @@ export const Day9 = () => {
 
         <div id="container9">
             <div className="choice">
-                {pkmns.map((pk, i) => <img onClick={() => setPkmn2(i)} alt=""
+                {pkmns.map((pk, i) => <img onClick={() => setPkmnL(i)} alt=""
                                            src={`${process.env.PUBLIC_URL}/day9/${pk}.png`}
-                                           style={i !== pkmn2 ? {filter: 'grayscale(1)'} : {}} />)}
+                                           style={{filter:  i !== pkmnL ?  'grayscale(1)' : 'none'}}/>)}
             </div>
-            <img alt="" src={`${process.env.PUBLIC_URL}/day9/${pkmns[pkmn2]}_${frame+1}.png`} className="pk" />
-            <img alt="" src={`${process.env.PUBLIC_URL}/day9/${pkmns[pkmn]}_${frame+1}.png`} className="pk" />
+            <img alt="" src={`${process.env.PUBLIC_URL}/day9/${pkmns[pkmnL]}_${frame+1}.png`} className="pk"  style={{'--ratio': ratioL}} />
+            <img alt="" src={`${process.env.PUBLIC_URL}/day9/${pkmns[pkmnR]}_${frame+1}.png`} className="pk"  style={{'--ratio': ratioR}}/>
             <div className="choice">
-                {pkmns.map((pk, i) => <img onClick={() => setPkmn(i)} alt=""
+                {pkmns.map((pk, i) => <img onClick={() => setPkmnR(i)} alt=""
                                            src={`${process.env.PUBLIC_URL}/day9/${pk}.png`}
-                                           style={i !== pkmn ? {filter: 'grayscale(1)'} : {}}/>)}
+                                           style={{filter:  i !== pkmnR ?  'grayscale(1)' : 'none'}}/>)}
             </div>
         </div>
     </div>
