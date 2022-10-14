@@ -1,0 +1,41 @@
+#day9 {
+  background-color: rgb(16, 16, 56);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+#day9 #container9 {
+  position: fixed;
+  --width: calc(100vh * 283/224);
+  width: var(--width);
+  height: 100vh;
+  left: calc(50vw - var(--width) / 2);
+  image-rendering: pixelated;
+  background-image: url("/public/day9/bg.png");
+  background-size: 100%;
+}
+#day9 #container9 .pk {
+  position: absolute;
+  --size: 20;
+  width: calc(var(--width) * var(--ratio) / 283);
+  left: calc(var(--width) * 146 / 283);
+  bottom: calc(var(--width) * 78 / 283);
+}
+#day9 #container9 .pk:nth-of-type(2) {
+  left: calc(var(--width) * 195 / 283);
+}
+#day9 #container9 .choice {
+  position: absolute;
+  left: calc(var(--width) * 20 * -3 / 283);
+  top: calc(50vh - var(--width) * 20 * 4 / 283);
+  display: grid;
+  grid-template: repeat(8, 1fr)/repeat(3, 1fr);
+}
+#day9 #container9 .choice img {
+  width: calc(var(--width) * 20 / 283);
+}
+#day9 #container9 .choice:nth-of-type(2) {
+  left: calc(var(--width));
+}
+
+/*# sourceMappingURL=Day9.css.map */

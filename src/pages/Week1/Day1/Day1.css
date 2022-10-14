@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "GARG";
+  src: url("../../../fonts/Milletun.otf") format("truetype");
+}
+.container {
+  --color: #f3f3f3;
+  background-color: var(--color);
+  --first-height: 10vh;
+}
+.container #main {
+  color: white;
+  position: relative;
+  left: 50vw;
+  top: 30vh;
+  z-index: 100;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 60vh;
+}
+.container #gargoyle {
+  z-index: 99;
+  width: 80%;
+}
+.container #text {
+  position: absolute;
+  top: 22vh;
+  font-style: italic;
+  font-family: GARG;
+  width: 100%;
+  text-align: center;
+}
+.container #title {
+  font-size: 6vw;
+  margin: 0;
+}
+.container #subtitle {
+  font-size: 4vw;
+  margin-top: 0;
+}
+.container .fire {
+  font-size: 24px;
+  filter: blur(0.02em);
+  -webkit-filter: blur(0.02em);
+  width: 100vw;
+  z-index: 50;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  height: var(--first-height);
+}
+.container .fire-container1 {
+  top: var(--first-height);
+}
+.container .fire-container2 {
+  top: calc(60vh - 40px);
+}
+.container #bg1 {
+  width: 120vw;
+  margin-left: -10vw;
+  position: fixed;
+  top: 12em;
+  height: calc(100vh - var(--first-height));
+  --color: rgb(161, 161, 161);
+  background-color: var(--color);
+  box-shadow: 0 -40px 20px 0 var(--color);
+}
+.container #bg2 {
+  width: 120vw;
+  margin-left: -10vw;
+  position: fixed;
+  top: 60vh;
+  height: calc(100vh - 12em);
+  --color: rgb(93, 93, 93);
+  background-color: var(--color);
+  box-shadow: 0 -40px 20px 0 var(--color);
+}
+.container #menu {
+  color: white;
+  z-index: 999;
+  font-size: 4vw;
+  position: absolute;
+  top: 70vh;
+  left: 44vw;
+  font-family: GARG;
+  text-align: left;
+}
+.container .triangle::before {
+  content: "►";
+  position: absolute;
+  left: -6rem;
+}
+
+/*# sourceMappingURL=Day1.css.map */

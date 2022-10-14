@@ -1,0 +1,77 @@
+#container2{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+#container2 .parallax {
+    position: fixed;
+    width: 200vw;
+    height: 100%;
+    background-size: calc(100vh*640/480) 100vh;
+    background-repeat: repeat;
+}
+
+#container2 #front{
+    background-image: url("/public/day2/front.png");
+    animation: slide 2s linear infinite;
+
+}
+
+#container2 #back{
+    background-image: url("/public/day2/back.png");
+    animation: slide 3s linear infinite;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translateX(calc(-100vh*640/480)); /* The image width */
+    }
+}
+
+
+#container2 #sonic{
+    background-image: url("/public/day2/sonic.gif");
+    width: 130px;
+    height: 152px;
+    position: fixed;
+    left: 40vw;
+    bottom: 20vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#container2 #eggman{
+    background-image: url("/public/day2/eggman.gif");
+    width: 233px;
+    height: 225px;
+    position: fixed;
+    left: 60vw;
+    bottom: 20vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@font-face {
+    font-family: 'Sonic';
+    src:  url('../../../fonts/sonic-the-hedgehog-2-hud-font.ttf') format('truetype');
+}
+
+#container2 #score{
+    position: fixed;
+    width: 50vw;
+    top: 0;
+    left: 40px;
+    font-family: 'Sonic';
+    font-size: 4rem;
+    color: white;
+    text-shadow: #000000 0px 5px 0px;
+}
+
+#container2 .yellow{
+    color: yellow;
+}
