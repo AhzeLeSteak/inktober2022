@@ -1,0 +1,49 @@
+#day13 #container13 {
+  position: absolute;
+  height: 100vh;
+  --width: calc(100vh*219/198);
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+  background-size: 100%;
+  image-rendering: pixelated;
+}
+#day13 #container13 #pie {
+  position: absolute;
+  width: calc(var(--width) * 20 / 219);
+  height: calc(var(--width) * 14 / 219);
+  top: calc(var(--width) * 94 / 219);
+  left: calc(var(--width) * 99 / 219);
+}
+#day13 #container13 .box {
+  position: absolute;
+  width: calc(var(--width) * var(--w) / 219);
+  height: calc(var(--width) * var(--h) / 219);
+  left: calc(var(--width) * var(--x) / 219);
+  top: calc(var(--width) * var(--y) / 219);
+  cursor: pointer;
+}
+#day13 #container13 #textBox {
+  position: fixed;
+  height: 20vh;
+  padding: 5vh;
+  --width: calc(100vh*249/198);
+  width: var(--width);
+  left: calc(50vw - 5vh - var(--width) / 2);
+  bottom: 0;
+  background-color: black;
+  border: 8px solid white;
+  color: white;
+  text-align: left;
+  font-family: DETERMINATION;
+  font-size: 6.25vh;
+  white-space: pre-wrap;
+  display: grid;
+  grid-template: 1fr 1fr/5vh 1fr;
+}
+
+@font-face {
+  font-family: "DETERMINATION";
+  src: url("../../../fonts/DeterminationMonoWebRegular-Z5oq.ttf") format("truetype");
+}
+
+/*# sourceMappingURL=Day13.css.map */

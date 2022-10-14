@@ -62,7 +62,7 @@ export const Day6 = () => {
         <div id="container6">
 
             <img id="face" src={`${process.env.PUBLIC_URL}/day6/${emotion}.png`}/>
-            {emotion !== 'neutral' && <img id="message" src={`${process.env.PUBLIC_URL}/day6/${message}.png`}/>}
+            {emotion !== 'neutral' && <img alt="" id="message" src={`${process.env.PUBLIC_URL}/day6/${message}.png`}/>}
 
             {angles.map((a, i) =>
                 <img className="petal"
