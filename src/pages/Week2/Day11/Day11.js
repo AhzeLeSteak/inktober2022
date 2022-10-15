@@ -2,7 +2,7 @@ import './Day11.css'
 import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import home from "../../../home.png";
-import replay from './replay.png';
+import replay from '../../../replay.png';
 
 export const Day11 = () => {
 

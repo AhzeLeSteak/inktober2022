@@ -39,7 +39,6 @@ export const Day13 = () => {
         }
         if(textBoxOpened){
             setTextBoxOpened(false);
-            console.log(textIndex);
             if(textIndex === 3)
                 setPiePickedUp(true);
         }
@@ -72,7 +71,6 @@ export const Day13 = () => {
         <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container13" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/day13/bg_${light ? 2 : 1}.png")`}}>
-            {piePickedUp ? "OUI" : "NON"}
 
             {!piePickedUp &&  <img src={pie} id="pie" alt=""/>}
 

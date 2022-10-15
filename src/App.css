@@ -49,3 +49,12 @@ body{
     cursor: pointer;
     z-index: 9999;
 }
+
+#replay{
+    image-rendering: pixelated;
+    position: fixed;
+    right: 100px;
+    bottom: 20px;
+    cursor: pointer;
+    z-index: 9999;
+}

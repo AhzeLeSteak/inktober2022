@@ -1,0 +1,33 @@
+#day14 #container14 {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+#day14 #container14 #logo {
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  animation: nintendo-in 4s linear forwards;
+}
+#day14 #container14 #logo #square {
+  display: inline-block;
+  background-color: black;
+  width: 250px;
+  height: 50px;
+}
+#day14 #container14 #logo #r {
+  width: 25px;
+  height: 50px;
+  image-rendering: pixelated;
+}
+
+@keyframes nintendo-in {
+  0% {
+    transform: translate(-50%, -55vh);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*# sourceMappingURL=Day14.css.map */
