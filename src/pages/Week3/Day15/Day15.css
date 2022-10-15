@@ -1,0 +1,75 @@
+#day15 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: wheat;
+}
+#day15 #container15 {
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}
+#day15 #container15 .wrapper {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+#day15 #container15 .box {
+  height: 100%;
+  width: 100%;
+  border-radius: 40%;
+}
+#day15 #container15 .box.first {
+  animation: none !important;
+}
+#day15 #container15 .box:nth-of-type(1) {
+  animation: topleft ease-in 0.3s forwards;
+}
+#day15 #container15 .box:nth-of-type(2) {
+  animation: topright ease-in 0.3s forwards;
+}
+#day15 #container15 .box:nth-of-type(3) {
+  animation: downleft ease-in 0.3s forwards;
+}
+#day15 #container15 .box:nth-of-type(4) {
+  animation: downright ease-in 0.3s forwards;
+}
+
+@keyframes topleft {
+  0% {
+    transform: translate(50%, 50%) scale(0.1);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes topright {
+  0% {
+    transform: translate(-50%, 50%) scale(0.1);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes downleft {
+  0% {
+    transform: translate(50%, -50%) scale(0.1);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes downright {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+/*# sourceMappingURL=Day15.css.map */
