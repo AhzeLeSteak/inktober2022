@@ -14,7 +14,7 @@
   height: 100vh;
   position: fixed;
   pointer-events: none;
-  background: radial-gradient(circle 100px at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80%, rgb(0, 0, 0) 100%);
+  background: radial-gradient(circle 100px at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 80%, black 100%);
 }
 #day12 #text {
   position: fixed;

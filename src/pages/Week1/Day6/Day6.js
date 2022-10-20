@@ -61,11 +61,12 @@ export const Day6 = () => {
         <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
         <div id="container6">
 
-            <img id="face" src={`${process.env.PUBLIC_URL}/day6/${emotion}.png`}/>
+            <img id="face" alt="" src={`${process.env.PUBLIC_URL}/day6/${emotion}.png`}/>
             {emotion !== 'neutral' && <img alt="" id="message" src={`${process.env.PUBLIC_URL}/day6/${message}.png`}/>}
 
             {angles.map((a, i) =>
                 <img className="petal"
+                     alt=""
                      key={i}
                      src={petal}
                      style={{'--angle': a, zIndex: i%2===0?1:2}}

@@ -1,0 +1,21 @@
+#day16 #container16 {
+  background-image: url("/public/day16/background.png");
+  background-size: 100%;
+  image-rendering: pixelated;
+  position: absolute;
+  --width: calc(90vh * 480 / 248);
+  height: 90vh;
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+  top: 5vh;
+}
+#day16 #container16 #chick {
+  position: absolute;
+  width: 5.8064516129vh;
+  height: 6.1693548387vh;
+  cursor: pointer;
+  left: calc(var(--width) * (var(--x) * 4.32 / 480 + 0.0333333333));
+  top: calc(90vh * (var(--y) * 2.08 / 248 + 0.064516129));
+}
+
+/*# sourceMappingURL=Day16.css.map */

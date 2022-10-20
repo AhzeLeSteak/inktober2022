@@ -42,7 +42,7 @@ function Home({isMobile}){
 
     const navigate = useNavigate();
     let i = 1;
-    themes.length = 15 + 1;
+    themes.length = 16 + 1;
 
 
     return <div>
