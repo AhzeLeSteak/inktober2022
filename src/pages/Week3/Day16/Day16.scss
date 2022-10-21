@@ -14,10 +14,16 @@
     top: 5vh;
 
 
-    #chick{
-      position: absolute;
+    .chick{
+      position: fixed;
       width: calc(90vh * 16 / 248);
       height: calc(90vh * 17 / 248);
+      left: calc(var(--x) * 1px);
+      top: calc(var(--y) * 1px);
+    }
+
+    #solo{
+      position: absolute;
       cursor: pointer;
       left: calc(var(--width) * (var(--x) *4.32/480 + 16/480));
       top: calc(90vh * (var(--y) * 2.08/248 + 16/248));
