@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/inktober2022/static/css/main.acf5f267.css",
-    "main.js": "/inktober2022/static/js/main.9380bfcb.js",
+    "main.css": "/inktober2022/static/css/main.9dd61c58.css",
+    "main.js": "/inktober2022/static/js/main.c1d1b6c8.js",
     "static/js/787.2fb93474.chunk.js": "/inktober2022/static/js/787.2fb93474.chunk.js",
     "static/media/Undertale OST 013 - Home (Music Box).mp3": "/inktober2022/static/media/Undertale OST 013 - Home (Music Box).be6795b7996285a211f1.mp3",
     "static/media/ost.mp3": "/inktober2022/static/media/ost.8e5a0be9bd5ea0cc21ff.mp3",
@@ -19,19 +19,21 @@
     "static/media/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword.ttf": "/inktober2022/static/media/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword.3b0dffb57a795b0b2d26.ttf",
     "static/media/ok.png": "/inktober2022/static/media/ok.df61198a81c776adfbd5.png",
     "static/media/PKMN-Mystery-Dungeon.ttf": "/inktober2022/static/media/PKMN-Mystery-Dungeon.9eec956404607d032107.ttf",
+    "static/media/pjsalt.png": "/inktober2022/static/media/pjsalt.41eadefa308280710891.png",
     "static/media/sonic.gif": "/inktober2022/static/media/sonic.3dbef5179afb9d1fb285.gif",
     "static/media/eggman.gif": "/inktober2022/static/media/eggman.d1b57b55a03a8c565b3e.gif",
+    "static/media/background.png": "/inktober2022/static/media/background.3029e85c345ba08bd979.png",
     "static/media/bulb.mp3": "/inktober2022/static/media/bulb.7fb035e55bf2f1ea1a57.mp3",
     "static/media/squirt.mp3": "/inktober2022/static/media/squirt.4509e557d49a4f6e7822.mp3",
     "static/media/charm.mp3": "/inktober2022/static/media/charm.b48861b5716208e7289e.mp3",
     "static/media/gargoyle.svg": "/inktober2022/static/media/gargoyle.935b489eccbac804e176e3fb4b5fb50b.svg",
     "index.html": "/inktober2022/index.html",
-    "main.acf5f267.css.map": "/inktober2022/static/css/main.acf5f267.css.map",
-    "main.9380bfcb.js.map": "/inktober2022/static/js/main.9380bfcb.js.map",
+    "main.9dd61c58.css.map": "/inktober2022/static/css/main.9dd61c58.css.map",
+    "main.c1d1b6c8.js.map": "/inktober2022/static/js/main.c1d1b6c8.js.map",
     "787.2fb93474.chunk.js.map": "/inktober2022/static/js/787.2fb93474.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acf5f267.css",
-    "static/js/main.9380bfcb.js"
+    "static/css/main.9dd61c58.css",
+    "static/js/main.c1d1b6c8.js"
   ]
 }
