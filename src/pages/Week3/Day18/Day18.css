@@ -1,0 +1,53 @@
+#container18 {
+  position: absolute;
+  height: 100vh;
+  --width: calc(100vh * 256 / 192);
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+  background-image: url("/public/day18/bg.png");
+  background-size: 100%;
+  image-rendering: pixelated;
+}
+#container18 #canvas {
+  position: fixed;
+  height: 100vh;
+  --width: calc(100vh * 256 / 192);
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+}
+#container18 .symbol {
+  position: absolute;
+  width: 15.625vh;
+  left: calc(100vh * var(--left) / 192);
+  top: calc(100vh * var(--top) / 192);
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+#container18 .symbol:nth-of-type(1) {
+  --left: 130;
+  --top: 90;
+}
+#container18 .symbol:nth-of-type(2) {
+  --left: 160;
+  --top: 70;
+}
+#container18 .symbol:nth-of-type(3) {
+  --left: 190;
+  --top: 50;
+}
+#container18 .symbol:nth-of-type(4) {
+  --left: 150;
+  --top: 130;
+}
+#container18 .symbol:nth-of-type(5) {
+  --left: 180;
+  --top: 110;
+}
+#container18 .symbol:nth-of-type(6) {
+  --left: 210;
+  --top: 90;
+}
+
+/*# sourceMappingURL=Day18.css.map */
