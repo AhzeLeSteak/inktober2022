@@ -1,0 +1,14 @@
+#day17{
+
+  #container17{
+    background-size: 100%;
+    position: absolute;
+    height: 100vh;
+    --width: calc(100vh * 364 / 236);
+    width: var(--width);
+    left: calc(50vw - var(--width) / 2);
+
+    cursor: url("/public/day17/pjsalt.png"), auto;
+  }
+
+}
