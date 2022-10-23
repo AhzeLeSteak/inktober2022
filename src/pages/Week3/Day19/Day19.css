@@ -1,0 +1,111 @@
+#container19 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+#container19 img {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+#container19 #undyne {
+  padding-top: 10px;
+  position: absolute;
+  left: 50vw;
+  top: 10vh;
+  --height: 60vh;
+  --width: calc(var(--height) * 87 / 119);
+  height: var(--height);
+  width: var(--width);
+  transform: translateX(-50%);
+  image-rendering: pixelated;
+  --ample: 10px;
+}
+#container19 #undyne #hair {
+  position: absolute;
+  width: 50%;
+  left: 2%;
+  animation: shake_undyne 1s ease-in-out infinite;
+}
+#container19 #undyne #head {
+  position: absolute;
+  width: 36.7816091954%;
+  left: 35%;
+  animation: shake_undyne 1s ease-in-out infinite;
+}
+#container19 #undyne #bust {
+  position: absolute;
+  width: 80%;
+  left: 16%;
+  top: 26%;
+  animation: shake_undyne 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+#container19 #undyne #skirt {
+  position: absolute;
+  width: 45%;
+  left: 30%;
+  top: 56%;
+  animation: shake_undyne 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+  --ample: 7px;
+}
+#container19 #undyne #legs {
+  position: absolute;
+  width: 54%;
+  left: 26%;
+  top: 71%;
+}
+#container19 #undyne #r_arm {
+  position: absolute;
+  width: 60%;
+  left: -10%;
+  top: 37%;
+  animation: shake_r_arm 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+#container19 #undyne #l_arm {
+  position: absolute;
+  width: 20%;
+  left: 70%;
+  top: 37%;
+  animation: shake_l_arm 1s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+@keyframes shake_undyne {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(var(--ample));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake_r_arm {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translate(5px, var(--ample));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes shake_l_arm {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translate(-5px, var(--ample));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*# sourceMappingURL=Day19.css.map */

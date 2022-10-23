@@ -9,7 +9,7 @@ import bills from './bills.png';
 
 const IMGS = [$, bills, house];
 
-const brush_size = 48;
+const brush_size = 60;
 
 export const Day18 = () => {
 
@@ -101,7 +101,7 @@ export const Day18 = () => {
 
         <div id="container18">
 
-            {symbols.map((s, i) => <img key={i} className="symbol" src={IMGS[s]} style={s === winningSymbol && over ? {opacity: '50%'} : {}}/>)}
+            {symbols.map((s, i) => <img alt="" key={i} className="symbol" src={IMGS[s]} style={s === winningSymbol && over ? {opacity: '50%'} : {}}/>)}
 
             <canvas id="canvas"
                     onMouseMove={draw}
