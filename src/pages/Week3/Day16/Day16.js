@@ -61,7 +61,6 @@ export const Day16 = () => {
         const style = document.getElementById('solo').style;
         style.setProperty('filter', 'hue-rotate(440deg)');
         setTimeout(() => style.removeProperty('filter'), 150);
-        //addChicken({x: Math.floor(Math.random()*1000), y: Math.floor(Math.random()*1000)})
 
         setChicks(st => st.map((ck, i) => {
             if(i !== nextIndex)

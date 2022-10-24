@@ -20,10 +20,14 @@
   width: 15.625vh;
   left: calc(100vh * var(--left) / 192);
   top: calc(100vh * var(--top) / 192);
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
 }
 #container18 .symbol:nth-of-type(1) {
   --left: 130;

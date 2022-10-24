@@ -1,0 +1,61 @@
+#container20 {
+  position: absolute;
+  image-rendering: pixelated;
+}
+#container20 #out {
+  background-image: url("/public/day20/out/bg.png");
+  background-size: 100%;
+  position: absolute;
+  --width: calc(100vh * 457 / 304);
+  height: 100vh;
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+}
+#container20 #out #wave {
+  position: absolute;
+  top: calc(var(--width) * 104 / 457);
+  left: 0;
+  width: calc(var(--width) * 211 / 457);
+  height: calc(var(--width) * 200 / 457);
+}
+#container20 #out #go-in {
+  cursor: pointer;
+  position: absolute;
+  top: calc(var(--width) * 117 / 457);
+  left: calc(var(--width) * 205 / 457);
+  width: calc(var(--width) * 48 / 457);
+  height: calc(var(--width) * 37 / 457);
+}
+#container20 #in {
+  background-image: url("/public/day20/in/bg.png");
+  background-size: 100%;
+  position: absolute;
+  --width: calc(100vh * 416 / 248);
+  height: 100vh;
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+}
+#container20 #in #w {
+  position: absolute;
+  top: calc(var(--width) * 93 / 416);
+  left: calc(var(--width) * 355 / 416);
+  width: calc(var(--width) * 36 / 416);
+  height: calc(var(--width) * 37.1 / 416);
+}
+#container20 #in #wave {
+  position: absolute;
+  top: calc(var(--width) * 72 / 416);
+  left: 0;
+  width: calc(var(--width) * 195 / 416);
+  height: calc(var(--width) * 176 / 416);
+}
+#container20 #in #go-out {
+  cursor: pointer;
+  position: absolute;
+  top: calc(var(--width) * 27 / 416);
+  left: calc(var(--width) * 195 / 416);
+  width: calc(var(--width) * 68 / 416);
+  height: calc(var(--width) * 57 / 416);
+}
+
+/*# sourceMappingURL=Day20.css.map */
