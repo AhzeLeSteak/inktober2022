@@ -23,6 +23,7 @@ import {Day17} from "./pages/Week3/Day17/Day17";
 import {Day18} from "./pages/Week3/Day18/Day18";
 import {Day19} from "./pages/Week3/Day19/Day19";
 import {Day20} from "./pages/Week4/Day20/Day20";
+import {Day21} from "./pages/Week4/Day21/Day21";
 
 function App() {
 
@@ -62,7 +63,7 @@ function App() {
                     <Route path={'/scrape'} element={<Day18/>}/>
                     <Route path={'/ponytail'} element={<Day19/>}/>
                     <Route path={'/bluff'} element={<Day20/>}/>
-
+                    <Route path={'/baddog'} element={<Day21/>}/>
                     <Route path={'/heist'} element={<Day22/>}/>
                 </>}
                 <Route path={'/'} element={<Home isMobile={isMobile}/>}/>

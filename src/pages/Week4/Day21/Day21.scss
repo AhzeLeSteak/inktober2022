@@ -1,0 +1,37 @@
+#container21{
+
+  position: absolute;
+  height: 100vh;
+  --width: calc(100vh * 256 / 240);
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+
+  background-image: url("/public/day21/background.png");
+  background-size: 100%;
+  image-rendering: pixelated;
+
+
+  #front{
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  
+  #ouaf{
+    position: absolute;
+
+    --left: -5000px;
+    width: calc(var(--width) * 56 / 256);
+    height: calc(var(--width) * 58 / 256);
+    left: calc(var(--left) - var(--width) * 56 *.5 / 256);
+    top: calc(var(--width) * 152 / 256);
+    animation: baddog 3s linear forwards;
+  }
+
+}
+
+@keyframes baddog {
+  50%{
+    transform: translateY(-88%);
+  }
+}
