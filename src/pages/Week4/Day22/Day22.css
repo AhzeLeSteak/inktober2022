@@ -1,0 +1,18 @@
+#container22 {
+  image-rendering: pixelated;
+  --bonom-width: 50px;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  cursor: url("/public/day22/cursor.png"), auto;
+  background-image: url("/public/day22/bg.png");
+  background-size: 150px;
+}
+#container22 #ptibonom {
+  position: absolute;
+  width: var(--bonom-width);
+  height: calc(var(--bonom-width) * 14 / 11);
+  transform: translateX(-50%) scaleX(var(--face-left));
+}
+
+/*# sourceMappingURL=Day22.css.map */
