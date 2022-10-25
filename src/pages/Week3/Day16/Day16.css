@@ -21,6 +21,12 @@
   cursor: pointer;
   left: calc(var(--width) * (var(--x) * 4.32 / 480 + 0.0333333333));
   top: calc(90vh * (var(--y) * 2.08 / 248 + 0.064516129));
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 /*# sourceMappingURL=Day16.css.map */

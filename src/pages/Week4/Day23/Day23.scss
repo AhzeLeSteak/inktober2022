@@ -1,0 +1,49 @@
+#container23{
+
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #4568aa;
+  image-rendering: pixelated;
+
+  #subcontainer{
+    position: absolute;
+    --height: 90vh;
+    height: var(--height);
+    --width: calc(var(--height) *900 / 620);
+    width: var(--width);
+    left: calc(50vw - var(--width) / 2);
+    top: calc(50vh - var(--height) / 2);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+
+    .nez{
+      position: absolute;
+      width: 38%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    #doigt{
+      position: absolute;
+      width: 35%;
+      transform: translateX(-50%);
+      --border: 18%;
+      left: calc(var(--border) + (100% - var(--border)*2) * var(--left));
+      top: calc(60% * var(--top));
+    }
+
+    .borne{
+      position: absolute;
+      background-color: rgba(255, 200, 200, 0.9);
+      width: 5px;
+      height: 500px;
+      --border: 18%;
+      left: calc(var(--border) + (100% - var(--border)*2) * var(--left));
+    }
+
+  }
+
+}
