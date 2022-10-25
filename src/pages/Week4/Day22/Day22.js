@@ -1,5 +1,7 @@
 import './Day22.css';
 import {useEffect, useState} from "react";
+import {useNavigate} from "react-router-dom";
+import home from "../../../home.png";
 
 const ACCELERATION = 50;
 const MAX_SPEED = 100;
@@ -9,6 +11,7 @@ let last_frame_update = new Date();
 
 export const Day22 = () => {
 
+    const navigate = useNavigate();
     const [bonom, setBonom] = useState({
         frame: 0,
         x: 100,
@@ -70,6 +73,8 @@ export const Day22 = () => {
     //const mouseMove = () => {};
 
     return <>
+        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
+
         <div id="container22" onMouseMove={mouseMove}>
             <img src={`${process.env.PUBLIC_URL}/day22/${bonom.walking ? 'w' : 'i'}${bonom.frame+1}.png`}
                  style={{left: bonom.x+'px', top: bonom.y+'px', '--face-left': bonom.left ? 1 : -1}}
