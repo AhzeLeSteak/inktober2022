@@ -1,0 +1,41 @@
+#container24{
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #d7d770;
+
+
+  #subcontainer{
+    --height: 100vh;
+    --width: calc(var(--height) * 240 / 160);
+
+    position: absolute;
+    height: var(--height);
+    width: var(--width);
+    left: calc(50vw - var(--width) / 2);
+
+    background-image: url("/public/day24/background.png");
+    image-rendering: pixelated;
+    background-size: 100%;
+
+    #fountain{
+      position: absolute;
+      width:  calc(var(--width) * 112 / 240);
+      height: calc(var(--width) * 64 / 240);
+      left:   calc(var(--width) * 64 / 240);
+      top:    calc(var(--width) * 32 / 240);
+
+      .fairy{
+        position: absolute;
+        width: calc(var(--width) * 19 / 240);
+        transform: translate(-50%, -50%);
+
+        left: calc(100%  * var(--left));
+        top: calc(100%  * var(--top));
+      }
+    }
+
+  }
+
+}
