@@ -48,7 +48,7 @@ function Home({isMobile}){
 
     return <div>
         <img src={Logo} alt="Inktober2022" height={160}/>
-        <img src={gh} alt="" id="home" width={60} onClick={() => window.location.replace('https://github.com/AhzeLeSteak')}/>
+        <img src={gh} alt="" id="home" width={60} onClick={() => window.location.replace('https://github.com/AhzeLeSteak/inktober2022')}/>
 
         <div className="grid" style={{gridTemplateColumns: '1fr'}}>
             {isMobile ?
