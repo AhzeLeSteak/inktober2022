@@ -1,6 +1,7 @@
 import './Home.css'
 import Logo from './inktober_logo.png';
 import {useNavigate} from "react-router-dom";
+import gh from '../../gh.png'
 
 function Home({isMobile}){
 
@@ -47,6 +48,8 @@ function Home({isMobile}){
 
     return <div>
         <img src={Logo} alt="Inktober2022" height={160}/>
+        <img src={gh} alt="" id="home" width={60} onClick={() => window.location.replace('https://github.com/AhzeLeSteak')}/>
+
         <div className="grid" style={{gridTemplateColumns: '1fr'}}>
             {isMobile ?
                 <>
