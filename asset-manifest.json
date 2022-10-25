@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/inktober2022/static/css/main.726d44ce.css",
+    "main.css": "/inktober2022/static/css/main.16e32638.css",
     "main.js": "/inktober2022/static/js/main.92de4ad4.js",
     "static/js/787.2fb93474.chunk.js": "/inktober2022/static/js/787.2fb93474.chunk.js",
     "static/media/Undertale OST 013 - Home (Music Box).mp3": "/inktober2022/static/media/Undertale OST 013 - Home (Music Box).be6795b7996285a211f1.mp3",
@@ -28,12 +28,12 @@
     "static/media/charm.mp3": "/inktober2022/static/media/charm.b48861b5716208e7289e.mp3",
     "static/media/gargoyle.svg": "/inktober2022/static/media/gargoyle.935b489eccbac804e176e3fb4b5fb50b.svg",
     "index.html": "/inktober2022/index.html",
-    "main.726d44ce.css.map": "/inktober2022/static/css/main.726d44ce.css.map",
+    "main.16e32638.css.map": "/inktober2022/static/css/main.16e32638.css.map",
     "main.92de4ad4.js.map": "/inktober2022/static/js/main.92de4ad4.js.map",
     "787.2fb93474.chunk.js.map": "/inktober2022/static/js/787.2fb93474.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.726d44ce.css",
+    "static/css/main.16e32638.css",
     "static/js/main.92de4ad4.js"
   ]
 }
