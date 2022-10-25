@@ -37,7 +37,6 @@ export const Day23 = () => {
             }
             else if(p.movingY){
                 const x = p.x, y = p.y;
-                p.y -= SPEED * dt;
                 const sur_nez = (x >= borne1 && x <= borne2) || (x >= borne5 && x <= borne6) || (x >= borne3 && x <= borne4);
                 const dans_nez = (x > borne2 && x <= borne3) || (x >= borne4 && x <= borne5);
                 if(dans_nez && y <= .4)
@@ -48,6 +47,8 @@ export const Day23 = () => {
                 }
                 else if(!sur_nez && !dans_nez && y <= .4)
                     p.movingY = false;
+                if(p.movingY)
+                    p.y -= SPEED * dt;
             }
             return p;
         })
