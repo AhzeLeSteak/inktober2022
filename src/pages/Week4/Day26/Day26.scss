@@ -1,0 +1,38 @@
+#container26{
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+
+  #subcontainer{
+    position: absolute;
+    --height: 100vh;
+    height: var(--height);
+    --width: calc(var(--height) * 410 / 172);
+    width: var(--width);
+    left: calc(50vw - var(--width) / 2);
+
+    image-rendering: pixelated;
+    background-image: url("/public/day26/bg.png");
+    background-size: 100%;
+
+    .link{
+      position: absolute;
+      width: calc(var(--width) * 32 / 410);
+      left : calc(var(--width) * 134 / 410);
+      top : calc(var(--width) * 68 / 410);
+    }
+
+    .link:nth-of-type(2){
+      left : calc(var(--width) * 164 / 410);
+    }
+    .link:nth-of-type(3){
+      left : calc(var(--width) * 194 / 410);
+    }
+    .link:nth-of-type(4){
+      left : calc(var(--width) * 224 / 410);
+    }
+  }
+
+
+}
