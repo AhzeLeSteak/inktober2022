@@ -15,7 +15,7 @@ const debug = false;
 
 export const Day23 = () => {
 
-    element={<WithRoute component={$1}/>}const [state, setState] = useState({});
+    const [state, setState] = useState({});
 
     const restart = () => setState({x: Math.random(), y: 1, go_left: Math.random() > .5, movingX: true, movingY: false, perdu: false});
 

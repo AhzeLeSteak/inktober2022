@@ -4,7 +4,7 @@ import {useEffect, useMemo, useState} from "react";
 const size = 128;
 
 export const Day15 = () => {
-    element={<WithRoute component={$1}/>}const [pixels, setPixels] = useState([]);
+    const [pixels, setPixels] = useState([]);
 
     useEffect(() => {
         const image = new Image();

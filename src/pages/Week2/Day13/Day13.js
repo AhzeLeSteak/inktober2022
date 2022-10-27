@@ -6,7 +6,7 @@ import ost from './Undertale OST 013 - Home (Music Box).mp3'
 
 export const Day13 = () => {
 
-    element={<WithRoute component={$1}/>}const [textBoxOpened, setTextBoxOpened] = useState(false);
+    const [textBoxOpened, setTextBoxOpened] = useState(false);
     const [textIndex, setTextIndex] = useState(0);
     const [light, setLight] = useState(false);
     const [tailleTxt, setTailleTxt] = useState(0);

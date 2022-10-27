@@ -9,7 +9,7 @@ let last_frame_update = new Date();
 
 export const Day22 = () => {
 
-    element={<WithRoute component={$1}/>}const [bonom, setBonom] = useState({
+    const [bonom, setBonom] = useState({
         frame: 0,
         x: window.innerWidth/2,
         y: window.innerHeight/2,

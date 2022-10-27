@@ -11,7 +11,7 @@ const brush_size = 60;
 
 export const Day18 = () => {
 
-    element={<WithRoute component={$1}/>}const [mouseDown, setMouseDown] = useState(false);
+    const [mouseDown, setMouseDown] = useState(false);
     const [symbols, setSymbols] = useState([0, 0, 0, 0, 0, 0]);
     const [winningSymbol, setWinningSymbol] = useState(-1);
     const [over, setOver] = useState(false);

@@ -6,7 +6,7 @@ let last_update = new Date();
 
 export const Day24 = () => {
 
-    element={<WithRoute component={$1}/>}const [fairies, setFairies] = useState(FAIRIES);
+    const [fairies, setFairies] = useState(FAIRIES);
     const [captured, setCaptured] = useState(false);
 
     const update = () => {

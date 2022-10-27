@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import './Day19.css';
 
 export const Day19 = () => {
-    element={<WithRoute component={$1}/>}const [hairIndex, setHairIndex] = useState(0);
+    const [hairIndex, setHairIndex] = useState(0);
     const [headIndex, setHeadIndex] = useState(0);
 
     useEffect(() => {

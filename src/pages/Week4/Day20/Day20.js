@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 
 export const Day20 = () => {
 
-    element={<WithRoute component={$1}/>}const [out, setOut] = useState(true);
+    const [out, setOut] = useState(true);
     const [frame, setFrame] = useState(0);
     const [frameW, setFrameW] = useState(0);
 

@@ -4,7 +4,7 @@ import replay from '../../../replay.png';
 
 export const Day11 = () => {
 
-    element={<WithRoute component={$1}/>}const [frame, setFrame] = useState(1);
+    const [frame, setFrame] = useState(1);
 
     useEffect(() => {
         const interval = setInterval(() => setFrame(f => f === 58 ? 58 : f+1), 80);

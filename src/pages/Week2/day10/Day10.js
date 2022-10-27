@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 
 export const Day10 = () => {
 
-    element={<WithRoute component={$1}/>}const [crabState, setCrabState] = useState(0);
+    const [crabState, setCrabState] = useState(0);
     const [moetteState, setMoetteState] = useState(0);
     const [moette2State, setMoette2State] = useState(0);
     const [moette3State, setMoette3State] = useState(0);

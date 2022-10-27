@@ -9,7 +9,7 @@ let timeout;
 
 export const Day14 = () => {
 
-    element={<WithRoute component={$1}/>}const [play, setPlay] = useState(false);
+    const [play, setPlay] = useState(false);
 
     const playSoundAfter4s = () => {
         clearTimeout(timeout);

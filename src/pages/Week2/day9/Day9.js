@@ -19,7 +19,7 @@ const ratio = [20, 21, 22,
 
 export const Day9 = () => {
 
-    element={<WithRoute component={$1}/>}const [pkmnL, setPkmnL] = useState(9);
+    const [pkmnL, setPkmnL] = useState(9);
     const [pkmnR, setPkmnR] = useState(7);
     const [frame, setFrame] = useState(0);
     const ratioL = ratio[pkmnL] ?? 20;
