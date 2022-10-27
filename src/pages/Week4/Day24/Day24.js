@@ -1,34 +1,12 @@
 import './Day24.css'
 import {useEffect, useState} from "react";
-import home from "../../../home.png";
-import {useNavigate} from "react-router-dom";
 
 const SPEED = 0.03;
 let last_update = new Date();
 
 export const Day24 = () => {
 
-    const navigate = useNavigate();
-    const [fairies, setFairies] = useState([
-        {
-            x: .4,
-            y: .5,
-            angle: 0,
-            dist: 0
-        },
-        {
-            x: .5,
-            y: .5,
-            angle: 0,
-            dist: 0
-        },
-        {
-            x: .6,
-            y: .5,
-            angle: 0,
-            dist: 0
-        },
-    ]);
+    element={<WithRoute component={$1}/>}const [fairies, setFairies] = useState(FAIRIES);
     const [captured, setCaptured] = useState(false);
 
     const update = () => {
@@ -87,22 +65,40 @@ export const Day24 = () => {
         setCaptured(false);
     };
 
-    return <>
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
-
-        <div id="container24" style={{cursor: `url("${process.env.PUBLIC_URL}/day24/${captured ? 'filled_' : ''}bottle.png"), auto`}}>
-            <div id="subcontainer">
-                <div id="fountain" onClick={ev => release(ev)}>
-                    {fairies.map((f, i) =>
-                        <img key={i}
-                             src={`${process.env.PUBLIC_URL}/day24/fairy.png`}
-                             onClick={e => capture(e, i)}
-                             style={{'--top': f.y, '--left': f.x}}
-                             className="fairy"
-                             alt=""/>
-                    )}
-                </div>
+    return <div id="container24" style={{cursor: `url("${process.env.PUBLIC_URL}/day24/${captured ? 'filled_' : ''}bottle.png"), auto`}}>
+        <div id="subcontainer">
+            <div id="fountain" onClick={ev => release(ev)}>
+                {fairies.map((f, i) =>
+                    <img key={i}
+                         src={`${process.env.PUBLIC_URL}/day24/fairy.png`}
+                         onClick={e => capture(e, i)}
+                         style={{'--top': f.y, '--left': f.x}}
+                         className="fairy"
+                         alt=""/>
+                )}
             </div>
         </div>
-    </>
+    </div>
 }
+
+
+const FAIRIES = [
+    {
+        x: .4,
+        y: .5,
+        angle: 0,
+        dist: 0
+    },
+    {
+        x: .5,
+        y: .5,
+        angle: 0,
+        dist: 0
+    },
+    {
+        x: .6,
+        y: .5,
+        angle: 0,
+        dist: 0
+    },
+];

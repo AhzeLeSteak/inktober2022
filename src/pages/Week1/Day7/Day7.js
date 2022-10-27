@@ -11,12 +11,10 @@ import squirtle_sound from './squirt.mp3';
 import armoire from './armoire.png';
 import {useEffect, useMemo, useState} from "react";
 import Sound from "react-sound";
-import home from "../../../home.png";
 import text from './text.png';
-import {useNavigate} from "react-router-dom";
 
 export const Day7 = () => {
-    const navigate = useNavigate()
+
     const [selected, setSelected] = useState(0);
     const [playing, setPlaying] = useState(false);
     const pokeImg = useMemo(() => [false, bulb, charm, squirt][selected], [selected]);
@@ -42,7 +40,6 @@ export const Day7 = () => {
 
 
     return <div id="day7">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
         <div id="container7" style={{'--angle': angle+'deg', '--sin': 1-Math.sin(angle*0.0174533 + Math.PI/2)}}>
 
             {selected > 0 && <div id="pk-img">

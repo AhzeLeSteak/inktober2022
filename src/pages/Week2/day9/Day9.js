@@ -1,7 +1,5 @@
 import './Day9.css';
 import {useEffect, useState} from "react";
-import {useNavigate} from "react-router-dom";
-import home from "../../../home.png";
 
 const pkmns = ['bulb', 'charm', 'squirtle',
     'chikorita', 'cynda', 'kaiminus',
@@ -21,8 +19,7 @@ const ratio = [20, 21, 22,
 
 export const Day9 = () => {
 
-    const navigate = useNavigate();
-    const [pkmnL, setPkmnL] = useState(9);
+    element={<WithRoute component={$1}/>}const [pkmnL, setPkmnL] = useState(9);
     const [pkmnR, setPkmnR] = useState(7);
     const [frame, setFrame] = useState(0);
     const ratioL = ratio[pkmnL] ?? 20;
@@ -35,7 +32,6 @@ export const Day9 = () => {
     }, []);
 
     return <div id="day9">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container9">
             <div className="choice">

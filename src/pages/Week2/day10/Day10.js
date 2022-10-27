@@ -1,12 +1,9 @@
 import './Day10.css';
 import {useEffect, useState} from "react";
-import home from "../../../home.png";
-import {useNavigate} from "react-router-dom";
 
 export const Day10 = () => {
 
-    const navigate = useNavigate();
-    const [crabState, setCrabState] = useState(0);
+    element={<WithRoute component={$1}/>}const [crabState, setCrabState] = useState(0);
     const [moetteState, setMoetteState] = useState(0);
     const [moette2State, setMoette2State] = useState(0);
     const [moette3State, setMoette3State] = useState(0);
@@ -28,7 +25,6 @@ export const Day10 = () => {
     }, []);
 
     return <div id="day10">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
         <div id="container10">
             <img src={`${process.env.PUBLIC_URL}/day10/moette_${moetteState+1}.png`}  style={{'--state': 1 - moetteState }} className="moette" alt=""/>
             <img src={`${process.env.PUBLIC_URL}/day10/moette_${moette2State+1}.png`} style={{'--state': 1 - moette2State}} className="moette" alt=""/>

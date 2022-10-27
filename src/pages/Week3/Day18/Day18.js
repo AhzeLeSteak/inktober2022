@@ -1,7 +1,5 @@
 import './Day18.css'
 import {useEffect, useState} from "react";
-import {useNavigate} from "react-router-dom";
-import home from "../../../home.png";
 import replay from "../../../replay.png";
 import $ from './$.png';
 import house from './house.png'
@@ -13,8 +11,7 @@ const brush_size = 60;
 
 export const Day18 = () => {
 
-    const navigate = useNavigate();
-    const [mouseDown, setMouseDown] = useState(false);
+    element={<WithRoute component={$1}/>}const [mouseDown, setMouseDown] = useState(false);
     const [symbols, setSymbols] = useState([0, 0, 0, 0, 0, 0]);
     const [winningSymbol, setWinningSymbol] = useState(-1);
     const [over, setOver] = useState(false);
@@ -96,7 +93,6 @@ export const Day18 = () => {
 
 
     return <div>
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
         {over && <img src={replay} alt="" id="replay" width={60} onClick={reset}/>}
 
         <div id="container18">

@@ -1,12 +1,9 @@
 import './Day20.css'
 import {useEffect, useState} from "react";
-import home from "../../../home.png";
-import {useNavigate} from "react-router-dom";
 
 export const Day20 = () => {
 
-    const navigate = useNavigate();
-    const [out, setOut] = useState(true);
+    element={<WithRoute component={$1}/>}const [out, setOut] = useState(true);
     const [frame, setFrame] = useState(0);
     const [frameW, setFrameW] = useState(0);
 
@@ -24,7 +21,6 @@ export const Day20 = () => {
     }, []);
 
     return <>
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container20">
             {out ?

@@ -1,7 +1,6 @@
 import {useEffect} from "react";
 import './Day12.css'
 import {useNavigate} from "react-router-dom";
-import home from "../../../home.png";
 
 export const Day12 = () => {
 
@@ -23,7 +22,6 @@ export const Day12 = () => {
     }, []);
 
     return <>
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
         <div id="day12">
             <div id="cursor"></div>
             <span id="text">YOU LOST THE GAME</span>

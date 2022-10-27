@@ -1,8 +1,6 @@
 import './Day23.css'
 import {useEffect, useState} from "react";
-import home from "../../../home.png";
 import replay from "../../../replay.png";
-import {useNavigate} from "react-router-dom";
 
 let last_update = new Date();
 const SPEED = 1;
@@ -17,8 +15,7 @@ const debug = false;
 
 export const Day23 = () => {
 
-    const navigate = useNavigate();
-    const [state, setState] = useState({});
+    element={<WithRoute component={$1}/>}const [state, setState] = useState({});
 
     const restart = () => setState({x: Math.random(), y: 1, go_left: Math.random() > .5, movingX: true, movingY: false, perdu: false});
 
@@ -61,7 +58,6 @@ export const Day23 = () => {
     }, []);
 
     return <>
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
         <img src={replay} alt="" id="replay" width={60} onClick={() => restart()}/>
         <div id="container23">
             <div id="subcontainer" onClick={() => setState(s => ({...s, movingX: false, movingY: true}))}>

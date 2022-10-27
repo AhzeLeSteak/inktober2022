@@ -1,6 +1,6 @@
 import './App.css';
 import {useEffect, useState} from "react";
-import {HashRouter, Navigate, Route, Routes} from "react-router-dom";
+import {HashRouter, Navigate, Route, Routes, useNavigate} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Day1 from "./pages/Week1/Day1/Day1";
 import Day2 from "./pages/Week1/Day2/Day2";
@@ -26,6 +26,8 @@ import {Day20} from "./pages/Week4/Day20/Day20";
 import {Day21} from "./pages/Week4/Day21/Day21";
 import {Day23} from "./pages/Week4/Day23/Day23";
 import {Day24} from "./pages/Week4/Day24/Day24";
+import {Day25} from "./pages/Week4/Day25/Day25";
+import homeImg from "./home.png";
 
 function App() {
 
@@ -45,36 +47,46 @@ function App() {
         <HashRouter>
             <Routes>
                 {!isMobile && <>
-                    <Route path={'/gargoyle'} element={<Day1/>}/>
-                    <Route path={'/scurry'} element={<Day2/>}/>
-                    <Route path={'/bat'} element={<Day3/>}/>
-                    <Route path={'/scallop'} element={<Day4/>}/>
-                    <Route path={'/flame'} element={<Day5/>}/>
-                    <Route path={'/bouquet'} element={<Day6/>}/>
-                    <Route path={'/trip'} element={<Day7/>}/>
-                    <Route path={'/match'} element={<Day8/>}/>
-                    <Route path={'/nest'} element={<Day9/>}/>
-                    <Route path={'/crabby'} element={<Day10/>}/>
-                    <Route path={'/eagle'} element={<Day11/>}/>
-                    <Route path={'/forget'} element={<Day12/>}/>
-                    <Route path={'/kind'} element={<Day13/>}/>
-                    <Route path={'/empty'} element={<Day14/>}/>
-                    <Route path={'/armadillo'} element={<Day15/>}/>
-                    <Route path={'/fowl'} element={<Day16/>}/>
-                    <Route path={'/salty'} element={<Day17/>}/>
-                    <Route path={'/scrape'} element={<Day18/>}/>
-                    <Route path={'/ponytail'} element={<Day19/>}/>
-                    <Route path={'/bluff'} element={<Day20/>}/>
-                    <Route path={'/baddog'} element={<Day21/>}/>
-                    <Route path={'/heist'} element={<Day22/>}/>
-                    <Route path={'/booger'} element={<Day23/>}/>
-                    <Route path={'/fairy'} element={<Day24/>}/>
+                    <Route path={'/gargoyle'} element={<WithRoute component={<Day1/>}/>}/>
+                    <Route path={'/scurry'} element={<WithRoute component={<Day2/>}/>}/>
+                    <Route path={'/bat'} element={<WithRoute component={<Day3/>}/>}/>
+                    <Route path={'/scallop'} element={<WithRoute component={<Day4/>}/>}/>
+                    <Route path={'/flame'} element={<WithRoute component={<Day5/>}/>}/>
+                    <Route path={'/bouquet'} element={<WithRoute component={<Day6/>}/>}/>
+                    <Route path={'/trip'} element={<WithRoute component={<Day7/>}/>}/>
+                    <Route path={'/match'} element={<WithRoute component={<Day8/>}/>}/>
+                    <Route path={'/nest'} element={<WithRoute component={<Day9/>}/>}/>
+                    <Route path={'/crabby'} element={<WithRoute component={<Day10/>}/>}/>
+                    <Route path={'/eagle'} element={<WithRoute component={<Day11/>}/>}/>
+                    <Route path={'/forget'} element={<WithRoute component={<Day12/>}/>}/>
+                    <Route path={'/kind'} element={<WithRoute component={<Day13/>}/>}/>
+                    <Route path={'/empty'} element={<WithRoute component={<Day14/>}/>}/>
+                    <Route path={'/armadillo'} element={<WithRoute component={<Day15/>}/>}/>
+                    <Route path={'/fowl'} element={<WithRoute component={<Day16/>}/>}/>
+                    <Route path={'/salty'} element={<WithRoute component={<Day17/>}/>}/>
+                    <Route path={'/scrape'} element={<WithRoute component={<Day18/>}/>}/>
+                    <Route path={'/ponytail'} element={<WithRoute component={<Day19/>}/>}/>
+                    <Route path={'/bluff'} element={<WithRoute component={<Day20/>}/>}/>
+                    <Route path={'/baddog'} element={<WithRoute component={<Day21/>}/>}/>
+                    <Route path={'/heist'} element={<WithRoute component={<Day22/>}/>}/>
+                    <Route path={'/booger'} element={<WithRoute component={<Day23/>}/>}/>
+                    <Route path={'/fairy'} element={<WithRoute component={<Day24/>}/>}/>
+                    <Route path={'/tempting'} element={<WithRoute component={<Day25/>}/>}/>
                 </>}
                 <Route path={'/'} element={<Home isMobile={isMobile}/>}/>
                 <Route path={'/*'} element={<Navigate to={'/'}/>}/>
             </Routes>
         </HashRouter>
     </div>
+}
+
+const WithRoute = ({component}) => {
+
+    const navigate = useNavigate();
+    return <>
+        <img src={homeImg} alt="" id="home" width={60} onClick={() => navigate('/')}/>
+        {component}
+    </>
 }
 
 export default App;

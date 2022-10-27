@@ -3,13 +3,10 @@ import pie from './pei.png';
 import {useEffect, useState} from "react";
 import Sound from "react-sound";
 import ost from './Undertale OST 013 - Home (Music Box).mp3'
-import home from "../../../home.png";
-import {useNavigate} from "react-router-dom";
 
 export const Day13 = () => {
 
-    const navigate = useNavigate();
-    const [textBoxOpened, setTextBoxOpened] = useState(false);
+    element={<WithRoute component={$1}/>}const [textBoxOpened, setTextBoxOpened] = useState(false);
     const [textIndex, setTextIndex] = useState(0);
     const [light, setLight] = useState(false);
     const [tailleTxt, setTailleTxt] = useState(0);
@@ -68,7 +65,6 @@ export const Day13 = () => {
     let chars = 0;
 
     return <div id="day13">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container13" style={{backgroundImage: `url("${process.env.PUBLIC_URL}/day13/bg_${light ? 2 : 1}.png")`}}>
 

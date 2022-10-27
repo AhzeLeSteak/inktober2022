@@ -3,11 +3,8 @@ import Front from './front.png';
 import Background from './background.png';
 import Castle from './castle.png';
 import {useState} from "react";
-import {useNavigate} from "react-router-dom";
-import home from "../../../home.png";
 
 export function Day3(){
-    const navigate = useNavigate();
 
     const [animate, setAnimate] = useState(false);
 
@@ -17,16 +14,12 @@ export function Day3(){
     }
 
 
-    return <>
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
+    return <div className="container3" onClick={click}>
 
-        <div className="container3" onClick={click}>
-
-            <img alt="" src={Background}/>
-            <div className={animate ? 'animate' : ''}>
-                <img alt="" src={Castle}/>
-            </div>
-            <img alt="" src={Front}/>
+        <img alt="" src={Background}/>
+        <div className={animate ? 'animate' : ''}>
+            <img alt="" src={Castle}/>
         </div>
-    </>
+        <img alt="" src={Front}/>
+    </div>
 }

@@ -1,0 +1,66 @@
+#container25{
+
+  position: absolute;
+  --height: 100vh;
+  height: var(--height);
+  --width: calc(var(--height) * 160 / 144);
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+
+  image-rendering: pixelated;
+  background-size: 100%;
+  background-image: url("/public/day25/bg.png");
+
+  .slot{
+    position: absolute;
+    width: calc(var(--width) * 16 / 160);
+    height: calc(var(--width) * (96*4) / 160);
+    top : calc(var(--width) * -128 / 160);
+    left: calc(var(--width) * 40 / 160);
+
+    background-image: url("/public/day25/slot.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+    z-index: -1;
+    animation: slot-slide 1.5s linear infinite;
+  }
+
+  .slot:nth-of-type(2){
+    left: calc(var(--width) * 72 / 160);
+    animation: slot-slide 1.9s linear infinite;
+  }
+
+  .slot:nth-of-type(3){
+    left: calc(var(--width) * 104 / 160);
+    animation: slot-slide 1.6s linear infinite;
+  }
+
+  .piece{
+    position: absolute;
+    width: calc(var(--width) * 32 / 160);
+    height: calc(var(--width) * 9 / 160);
+    top : calc(var(--width) * 96 / 160);
+    left: calc(var(--width) * 120 / 160);
+    background-size: 100%;
+  }
+
+  .piece.selected{
+    background-image: url("/public/day25/fleche.png");
+    background-size: 100%;
+  }
+
+  .piece:nth-of-type(2){
+    top : calc(var(--width) * 112 / 160);
+  }
+
+  .piece:nth-of-type(3){
+    top : calc(var(--width) * 128 / 160);
+  }
+
+}
+
+@keyframes slot-slide {
+  100%{
+    transform: translateY(25%);
+  }
+}

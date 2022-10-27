@@ -1,5 +1,3 @@
-import home from "../../../home.png";
-import {useNavigate} from "react-router-dom";
 import './Day6.css'
 import {useMemo, useState} from "react";
 import petal from './petal.png';
@@ -8,7 +6,6 @@ import Sound from 'react-sound';
 
 export const Day6 = () => {
 
-    const navigate = useNavigate();
     const [emotion, setEmotion] = useState('neutral');
     const [lastEmotion, setLastEmotion] = useState('');
     const [rowCounter, setRowCounter] = useState(0);
@@ -58,7 +55,6 @@ export const Day6 = () => {
     };
 
     return <div id="day6">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
         <div id="container6">
 
             <img id="face" alt="" src={`${process.env.PUBLIC_URL}/day6/${emotion}.png`}/>

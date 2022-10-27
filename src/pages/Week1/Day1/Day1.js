@@ -3,17 +3,13 @@ import './Day1.css';
 import './Fire.css'
 import '../../../fonts/Milletun.otf'
 import {useState} from "react";
-import home from "../../../home.png";
-import {useNavigate} from "react-router-dom";
 
 export const Day1 = props => {
 
-    const navigate = useNavigate();
 
     const [selected, setSelected] = useState(0);
 
     return <div className="container">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="main">
             <img id="gargoyle" src={gargoyle} alt=""/>

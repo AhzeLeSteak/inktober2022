@@ -1,11 +1,8 @@
 import {useEffect, useState} from "react";
 import './Day19.css';
-import home from "../../../home.png";
-import {useNavigate} from "react-router-dom";
 
 export const Day19 = () => {
-    const navigate = useNavigate();
-    const [hairIndex, setHairIndex] = useState(0);
+    element={<WithRoute component={$1}/>}const [hairIndex, setHairIndex] = useState(0);
     const [headIndex, setHeadIndex] = useState(0);
 
     useEffect(() => {
@@ -18,7 +15,6 @@ export const Day19 = () => {
 
 
     return <>
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container19" onClick={() => setHeadIndex(i => (i+1)%7)}>
 

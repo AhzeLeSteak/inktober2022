@@ -1,5 +1,3 @@
-import {useNavigate} from "react-router-dom";
-import home from "../../../home.png";
 import {useCollectionData} from "react-firebase-hooks/firestore";
 import {addDoc, collection} from "firebase/firestore";
 import {firestoreApp} from "../../../firestore";
@@ -10,7 +8,6 @@ import '../../../fonts/GIN.TTF';
 
 export const Day5 = () => {
 
-    const navigate = useNavigate();
     const message_collection = useMemo(() => collection(firestoreApp(), 'messages'), []);
     const [messages_data] = useCollectionData(message_collection);
     const [input, setInput] = useState('');
@@ -61,7 +58,6 @@ export const Day5 = () => {
                 <input type="text" value={tmp_pseudo} onChange={e => setTmpPseudo(e.target.value)}/>
                 <button onClick={() => setPseudo(tmp_pseudo)}>OK</button>
             </div>}
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
     </div>
 }
 

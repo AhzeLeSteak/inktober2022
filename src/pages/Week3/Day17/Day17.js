@@ -1,5 +1,4 @@
 import './Day17.css';
-import home from "../../../home.png";
 import {useNavigate} from "react-router-dom";
 
 export const Day17 = () => {
@@ -15,7 +14,6 @@ export const Day17 = () => {
     }
 
     return <div id="day17">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container17" onMouseMove={move}>
 

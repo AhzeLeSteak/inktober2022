@@ -1,5 +1,4 @@
 import './Day16.css'
-import home from "../../../home.png";
 import {useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 import chick from './Chicken.gif';
@@ -85,7 +84,6 @@ export const Day16 = () => {
     };
 
     return <div id="day16">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container16">
 

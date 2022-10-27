@@ -1,10 +1,7 @@
 import './Day21.css';
 import {useEffect, useState} from "react";
-import home from "../../../home.png";
-import {useNavigate} from "react-router-dom";
 
 export const Day21 = () => {
-    const navigate = useNavigate();
 
     const [img, setImg] = useState(1);
     const [playing, setPlaying] = useState(false);
@@ -43,15 +40,9 @@ export const Day21 = () => {
 
 
 
-    return <>
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
+    return <div id="container21" onClick={animate}>
+        <img src={`${process.env.PUBLIC_URL}/day21/${img + (img === 4 ? df : 0)}.png`} alt="" id="ouaf"/>
+        <img src={`${process.env.PUBLIC_URL}/day21/front.png`} alt="" id="front"/>
 
-        <div id="container21" onClick={animate}>
-            <img src={`${process.env.PUBLIC_URL}/day21/${img + (img === 4 ? df : 0)}.png`} alt="" id="ouaf"/>
-            <img src={`${process.env.PUBLIC_URL}/day21/front.png`} alt="" id="front"/>
-
-
-
-        </div>
-    </>
+    </div>
 }

@@ -1,13 +1,10 @@
 import './Day15.css'
 import {useEffect, useMemo, useState} from "react";
-import {useNavigate} from "react-router-dom";
-import home from "../../../home.png";
 
 const size = 128;
 
 export const Day15 = () => {
-    const navigate = useNavigate();
-    const [pixels, setPixels] = useState([]);
+    element={<WithRoute component={$1}/>}const [pixels, setPixels] = useState([]);
 
     useEffect(() => {
         const image = new Image();
@@ -38,7 +35,6 @@ export const Day15 = () => {
 
 
     return <div id="day15">
-        <img src={home} alt="" id="home" width={60} onClick={() => navigate('/')}/>
 
         <div id="container15">
             {pixels.length > 0 ? <Square x={0} y={0} size={size} pixels={pixels}></Square> : <></>}
