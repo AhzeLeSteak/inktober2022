@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/inktober2022/static/css/main.5d1aecc2.css",
-    "main.js": "/inktober2022/static/js/main.c2f6a710.js",
+    "main.css": "/inktober2022/static/css/main.4f8e1e6c.css",
+    "main.js": "/inktober2022/static/js/main.6701c8d5.js",
     "static/js/787.2fb93474.chunk.js": "/inktober2022/static/js/787.2fb93474.chunk.js",
     "static/media/Undertale OST 013 - Home (Music Box).mp3": "/inktober2022/static/media/Undertale OST 013 - Home (Music Box).be6795b7996285a211f1.mp3",
     "static/media/ost.mp3": "/inktober2022/static/media/ost.8e5a0be9bd5ea0cc21ff.mp3",
@@ -17,6 +17,7 @@
     "static/media/sonic-the-hedgehog-2-hud-font.ttf": "/inktober2022/static/media/sonic-the-hedgehog-2-hud-font.daaf6a5d15c2458a6603.ttf",
     "static/media/ko.png": "/inktober2022/static/media/ko.ef066b90815f540a9611.png",
     "static/media/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword.ttf": "/inktober2022/static/media/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword.3b0dffb57a795b0b2d26.ttf",
+    "static/media/front.png": "/inktober2022/static/media/front.1237216005e32a83ea9b.png",
     "static/media/ok.png": "/inktober2022/static/media/ok.df61198a81c776adfbd5.png",
     "static/media/PKMN-Mystery-Dungeon.ttf": "/inktober2022/static/media/PKMN-Mystery-Dungeon.9eec956404607d032107.ttf",
     "static/media/pjsalt.png": "/inktober2022/static/media/pjsalt.41eadefa308280710891.png",
@@ -29,12 +30,12 @@
     "static/media/charm.mp3": "/inktober2022/static/media/charm.b48861b5716208e7289e.mp3",
     "static/media/gargoyle.svg": "/inktober2022/static/media/gargoyle.935b489eccbac804e176e3fb4b5fb50b.svg",
     "index.html": "/inktober2022/index.html",
-    "main.5d1aecc2.css.map": "/inktober2022/static/css/main.5d1aecc2.css.map",
-    "main.c2f6a710.js.map": "/inktober2022/static/js/main.c2f6a710.js.map",
+    "main.4f8e1e6c.css.map": "/inktober2022/static/css/main.4f8e1e6c.css.map",
+    "main.6701c8d5.js.map": "/inktober2022/static/js/main.6701c8d5.js.map",
     "787.2fb93474.chunk.js.map": "/inktober2022/static/js/787.2fb93474.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d1aecc2.css",
-    "static/js/main.c2f6a710.js"
+    "static/css/main.4f8e1e6c.css",
+    "static/js/main.6701c8d5.js"
   ]
 }
