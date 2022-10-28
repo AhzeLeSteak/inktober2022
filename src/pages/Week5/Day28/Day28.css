@@ -1,0 +1,37 @@
+#container28 {
+  position: absolute;
+  --height: 100vh;
+  --width: calc(var(--height) * 1920 / 1080);
+  height: var(--height);
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+  overflow: hidden;
+  background-size: 100%;
+  background-image: url("/public/day28/bg.png");
+  --lantern-x: 50vw;
+  --lantern-y: 35vh;
+}
+#container28 #lantern {
+  position: absolute;
+  width: 6vh;
+  left: var(--lantern-x);
+  top: var(--lantern-y);
+  transform: translate(-50%, -50%);
+}
+#container28 #layer {
+  position: fixed;
+  height: var(--height);
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+  background: radial-gradient(circle 80px at var(--lantern-x) var(--lantern-y), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 60%, rgb(0, 0, 0) 80%);
+  animation: glow 18s linear infinite;
+  transform-origin: var(--lantern-x) var(--lantern-y);
+}
+
+@keyframes glow {
+  50% {
+    transform: scale(7);
+  }
+}
+
+/*# sourceMappingURL=Day28.css.map */
