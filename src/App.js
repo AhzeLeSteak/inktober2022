@@ -29,6 +29,7 @@ import {Day24} from "./pages/Week4/Day24/Day24";
 import {Day25} from "./pages/Week4/Day25/Day25";
 import homeImg from "./home.png";
 import {Day26} from "./pages/Week4/Day26/Day26";
+import {Day27} from "./pages/Week5/Day27/Day27";
 
 function App() {
 
@@ -74,6 +75,7 @@ function App() {
                     <Route path={'/fairy'} element={<WithRoute component={<Day24/>}/>}/>
                     <Route path={'/tempting'} element={<WithRoute component={<Day25/>}/>}/>
                     <Route path={'/ego'} element={<WithRoute component={<Day26/>}/>}/>
+                    <Route path={'/snack'} element={<WithRoute component={<Day27/>}/>}/>
                 </>}
                 <Route path={'/'} element={<Home isMobile={isMobile}/>}/>
                 <Route path={'/*'} element={<Navigate to={'/'}/>}/>

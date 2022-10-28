@@ -1,0 +1,62 @@
+#container27{
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  image-rendering: pixelated;
+
+  #bg{
+    position: absolute;
+    --height: 100vh;
+    --width: calc(var(--height) * 2 * 672 / 192);
+    height: var(--height);
+    width: var(--width);
+
+    background-image: url("/public/day27/bg.png");
+    background-size: 50%;
+    background-repeat: repeat-x;
+
+    animation: snack_slide 8s linear infinite;
+  }
+
+  #front{
+    position: absolute;
+    --height: 100vh;
+    --width: calc(var(--height) * 2 * 679 / 217);
+    height: var(--height);
+    width: var(--width);
+
+    background-image: url("/public/day27/front.png");
+    background-size: 50%;
+    background-repeat: repeat-x;
+
+    animation: snack_slide 4s linear infinite;
+
+
+  }
+
+  #kaaabi{
+    position: absolute;
+    width: 15vh;
+    left: 50vw;
+    top: 55vh;
+    transform: translateX(-50%);
+  }
+
+  #food{
+    position: absolute;
+    width: 8vh;
+    left: calc(52vw + 50vw * var(--pos));
+    top: 55vh;
+    transform: translateX(-50%);
+  }
+
+
+}
+
+@keyframes snack_slide {
+  100%{
+    transform: translateX(-50%);
+  }
+}
