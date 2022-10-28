@@ -1,5 +1,4 @@
 import './Day16.css'
-import {useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 import chick from './Chicken.gif';
 
@@ -8,7 +7,6 @@ const speed = 9;
 
 export const Day16 = () => {
 
-    const navigate = useNavigate();
 
     const [chicks, setChicks] = useState([
         {x: -100, y: 0, angle: Math.PI},

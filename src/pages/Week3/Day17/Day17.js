@@ -1,9 +1,7 @@
 import './Day17.css';
-import {useNavigate} from "react-router-dom";
 
 export const Day17 = () => {
 
-    const navigate = useNavigate();
 
     const move = ev => {
         const container = document.getElementById('container17');

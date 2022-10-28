@@ -1,10 +1,8 @@
 import {useEffect} from "react";
 import './Day12.css'
-import {useNavigate} from "react-router-dom";
 
 export const Day12 = () => {
 
-    const navigate = useNavigate();
 
     useEffect(() => {
         function update(e){

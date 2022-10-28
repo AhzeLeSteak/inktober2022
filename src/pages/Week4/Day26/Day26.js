@@ -1,11 +1,12 @@
 import './Day26.css'
 import {useEffect, useState} from "react";
-import sound from './Zelda Link Combo Attack - Sound Effect (HD).mp3';
+import sound from './atk_sound.mp3';
 import Sound from "react-sound";
 
 export const Day26 = () => {
 
     const [state, setState] = useState({idle: true, frame: 0});
+    const [playing, setPlaying] = useState(false);
 
     const update = () => setState(s => {
         return {
@@ -20,9 +21,16 @@ export const Day26 = () => {
         return () => clearInterval(i);
     }, []);
 
+    const click = () => {
+        setState(s => ({frame: 0, idle: false}));
+        setPlaying(false);
+        setTimeout(() => setPlaying(true), 1);
+        setTimeout(() => setPlaying(false), 200);
+    };
+
 
     return <div id="container26">
-        <div id="subcontainer" onClick={() => setState(s => ({frame: 0, idle: false}))}>
+        <div id="subcontainer" onClick={click}>
             <img src={`${process.env.PUBLIC_URL}/day26/green/${state.idle ? 'idle' : state.frame+1}.png`} alt="" className="link"/>
             <img src={`${process.env.PUBLIC_URL}/day26/blue/${state.idle ? 'idle' : state.frame+1}.png`} alt="" className="link"/>
             <img src={`${process.env.PUBLIC_URL}/day26/purple/${state.idle ? 'idle' : state.frame+1}.png`} alt="" className="link"/>
@@ -30,8 +38,8 @@ export const Day26 = () => {
         </div>
 
         <Sound url={sound}
-               playStatus={state.idle ? Sound.status.STOPPED : Sound.status.PLAYING}
-               loop={true}
+               playStatus={!playing ? Sound.status.STOPPED : Sound.status.PLAYING}
+               loop={false}
         />
     </div>
 }
