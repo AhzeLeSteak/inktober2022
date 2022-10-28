@@ -37,14 +37,22 @@
 #container27 #food {
   position: absolute;
   width: 8vh;
-  left: calc(52vw + 50vw * var(--pos));
   top: 55vh;
   transform: translateX(-50%);
+  animation: food_slide 0.8s linear infinite;
 }
 
 @keyframes snack_slide {
   100% {
     transform: translateX(-50%);
+  }
+}
+@keyframes food_slide {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: 52vw;
   }
 }
 
