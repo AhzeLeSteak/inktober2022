@@ -1,0 +1,91 @@
+#container29 {
+  position: absolute;
+  --height: 100vh;
+  --width: calc(var(--height) * 160 / 144);
+  height: var(--height);
+  width: var(--width);
+  left: calc(50vw - var(--width) / 2);
+  image-rendering: pixelated;
+  background-size: 100%;
+  overflow: hidden;
+}
+#container29 #front {
+  position: absolute;
+  width: 200%;
+  height: calc(var(--height) * 61 / 144);
+  top: calc(var(--height) * 83 / 144);
+  background-image: url("/public/day29/cloud.png");
+  background-size: 50%;
+  background-repeat: repeat-x;
+  animation: slide_cloud 4s linear infinite;
+}
+#container29 #gf {
+  position: fixed;
+  height: calc(var(--height) * 7 / 144);
+  width: calc(var(--height) * 104 / 144);
+  top: calc(var(--height) * 132 / 144);
+  left: 50vw;
+  transform: translateX(-50%);
+  background-image: url("/public/day29/game_freak.png");
+  background-size: 100%;
+}
+#container29 #hooh {
+  position: fixed;
+  width: calc(var(--height) * 64 / 144);
+  height: calc(var(--height) * 64 / 144);
+  top: calc(var(--height) * 48 / 144);
+  left: 50vw;
+  z-index: 10;
+  background-size: 100%;
+  animation: hooh 4s linear infinite;
+}
+#container29 .sprinkle {
+  position: absolute;
+  width: calc(var(--height) * 9 / 144);
+  height: calc(var(--height) * 16 / 144);
+  top: calc(var(--height) * 54 / 144);
+  left: calc(var(--height) * 0.5);
+  background-size: 100%;
+  animation: sparkle 0.6s linear infinite;
+  background-image: url("/public/day29/sprinkle.png");
+}
+#container29 .sprinkle:nth-of-type(2) {
+  top: calc(var(--height) * 69 / 144);
+  animation-delay: 1.5s;
+}
+#container29 .sprinkle:nth-of-type(3) {
+  top: calc(var(--height) * 79 / 144);
+  animation-delay: 1s;
+}
+#container29 .sprinkle:nth-of-type(4) {
+  top: calc(var(--height) * 79 / 144);
+  animation-delay: 2s;
+}
+#container29 .sprinkle:nth-of-type(4) {
+  top: calc(var(--height) * 95 / 144);
+  animation-delay: 2.5s;
+}
+
+@keyframes slide_cloud {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes hooh {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translate(-50%, 5%);
+  }
+}
+@keyframes sparkle {
+  100% {
+    transform: translate(40vw, 60vh);
+  }
+}
+
+/*# sourceMappingURL=Day29.css.map */
