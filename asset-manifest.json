@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/inktober2022/static/css/main.f6b8f2e5.css",
-    "main.js": "/inktober2022/static/js/main.c811d838.js",
+    "main.css": "/inktober2022/static/css/main.a945236b.css",
+    "main.js": "/inktober2022/static/js/main.b3df5864.js",
     "static/js/787.2fb93474.chunk.js": "/inktober2022/static/js/787.2fb93474.chunk.js",
     "static/media/Undertale OST 013 - Home (Music Box).mp3": "/inktober2022/static/media/Undertale OST 013 - Home (Music Box).be6795b7996285a211f1.mp3",
     "static/media/ost.mp3": "/inktober2022/static/media/ost.8e5a0be9bd5ea0cc21ff.mp3",
@@ -30,12 +30,12 @@
     "static/media/charm.mp3": "/inktober2022/static/media/charm.b48861b5716208e7289e.mp3",
     "static/media/gargoyle.svg": "/inktober2022/static/media/gargoyle.935b489eccbac804e176e3fb4b5fb50b.svg",
     "index.html": "/inktober2022/index.html",
-    "main.f6b8f2e5.css.map": "/inktober2022/static/css/main.f6b8f2e5.css.map",
-    "main.c811d838.js.map": "/inktober2022/static/js/main.c811d838.js.map",
+    "main.a945236b.css.map": "/inktober2022/static/css/main.a945236b.css.map",
+    "main.b3df5864.js.map": "/inktober2022/static/js/main.b3df5864.js.map",
     "787.2fb93474.chunk.js.map": "/inktober2022/static/js/787.2fb93474.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6b8f2e5.css",
-    "static/js/main.c811d838.js"
+    "static/css/main.a945236b.css",
+    "static/js/main.b3df5864.js"
   ]
 }
