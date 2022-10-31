@@ -4,9 +4,7 @@ import './Fire.css'
 import '../../../fonts/Milletun.otf'
 import {useState} from "react";
 
-export const Day1 = props => {
-
-
+export const Day1 = () => {
     const [selected, setSelected] = useState(0);
 
     return <div className="container">

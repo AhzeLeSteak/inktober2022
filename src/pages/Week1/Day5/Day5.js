@@ -14,9 +14,20 @@ export const Day5 = () => {
     const [pseudo, setPseudo] = useState('');
     const [tmp_pseudo, setTmpPseudo] = useState('');
 
-    const messages = messages_data && messages_data.sort(({date: a}, {date: b}) => {
-        return new Date(a.seconds*1000) - new Date(b.seconds*1000);
-    })
+
+    const messages = useMemo(() => {
+        const now = new Date();
+        return messages_data && messages_data
+            .filter(({date}) => {
+                const real_date = new Date(date.seconds * 1000);
+                const diffTime = Math.abs(now - real_date);
+                const diffHours = Math.ceil(diffTime / (1000 * 60 * 60));
+                return diffHours <= 24;
+            })
+            .sort(({date: a}, {date: b}) => {
+                return new Date(a.seconds * 1000) - new Date(b.seconds * 1000);
+            });
+    }, [messages_data]);
 
 
     function sendMessage() {
