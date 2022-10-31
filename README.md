@@ -5,4 +5,4 @@ The [Inktober](https://inktober.com) challenge consists in drawing something rel
 Since I can't draw but still wanted to work on my creativity, I decided to do not drawing but webpages
 inspired by some of the video games I love.
 
-You can see the result [here](https://ahzelesteak.github.io/inktober2022/#/gear), enjoy !
+You can see the result [here](https://ahzelesteak.github.io/inktober2022/), enjoy !
