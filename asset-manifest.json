@@ -1,19 +1,28 @@
 {
   "files": {
-    "main.css": "/inktober2022/static/css/main.a945236b.css",
-    "main.js": "/inktober2022/static/js/main.e7246251.js",
+    "main.css": "/inktober2022/static/css/main.636d32e8.css",
+    "main.js": "/inktober2022/static/js/main.59d17724.js",
     "static/js/787.2fb93474.chunk.js": "/inktober2022/static/js/787.2fb93474.chunk.js",
     "static/media/Undertale OST 013 - Home (Music Box).mp3": "/inktober2022/static/media/Undertale OST 013 - Home (Music Box).be6795b7996285a211f1.mp3",
     "static/media/ost.mp3": "/inktober2022/static/media/ost.8e5a0be9bd5ea0cc21ff.mp3",
     "static/media/bg.png": "/inktober2022/static/media/bg.f476697aa7691e44d4eb.png",
     "static/media/spawn.png": "/inktober2022/static/media/spawn.7696b4aebd67eb7e93d9.png",
+    "static/media/c2.wav": "/inktober2022/static/media/c2.3f338b9dfd98555881ed.wav",
+    "static/media/snake_2.wav": "/inktober2022/static/media/snake_2.0ef914d8417f711dd35f.wav",
+    "static/media/snake_1.wav": "/inktober2022/static/media/snake_1.9c3cbb8667c1c4e3d220.wav",
+    "static/media/s3.wav": "/inktober2022/static/media/s3.06763ff10291aae26ea5.wav",
+    "static/media/c1.wav": "/inktober2022/static/media/c1.46481a23a7608ed2974b.wav",
+    "static/media/callsound.mp3": "/inktober2022/static/media/callsound.af7adef234b6da934bed.mp3",
     "static/media/Milletun.otf": "/inktober2022/static/media/Milletun.a8bd31df9a09787f79fc.otf",
+    "static/media/codec.png": "/inktober2022/static/media/codec.bde76e0fbf1eb6dc11d0.png",
     "static/media/manlymenbb_bold.ttf": "/inktober2022/static/media/manlymenbb_bold.2fab82c7a14e844777fa.ttf",
     "static/media/top_background.png": "/inktober2022/static/media/top_background.957099322c897c46a397.png",
     "static/media/Gameboy Startup Sound.mp3": "/inktober2022/static/media/Gameboy Startup Sound.b3597da47e505178401f.mp3",
     "static/media/DeterminationMonoWebRegular-Z5oq.ttf": "/inktober2022/static/media/DeterminationMonoWebRegular-Z5oq.2f9b96898e4db1b8e690.ttf",
+    "static/media/FCRAFTBD.TTF": "/inktober2022/static/media/FCRAFTBD.080f08d2bd86a5708cd1.TTF",
     "static/media/inktober_logo.png": "/inktober2022/static/media/inktober_logo.b26068949b7811663bc6.png",
     "static/media/GIN.TTF": "/inktober2022/static/media/GIN.d7e834d31c54ea3fe312.TTF",
+    "static/media/codec_front.png": "/inktober2022/static/media/codec_front.4beb42fac6083975b4ec.png",
     "static/media/sonic-the-hedgehog-2-hud-font.ttf": "/inktober2022/static/media/sonic-the-hedgehog-2-hud-font.daaf6a5d15c2458a6603.ttf",
     "static/media/ko.png": "/inktober2022/static/media/ko.ef066b90815f540a9611.png",
     "static/media/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword.ttf": "/inktober2022/static/media/TLOZ-Minish-Cap-A-Link-to-the-Past-Four-Sword.3b0dffb57a795b0b2d26.ttf",
@@ -30,12 +39,12 @@
     "static/media/charm.mp3": "/inktober2022/static/media/charm.b48861b5716208e7289e.mp3",
     "static/media/gargoyle.svg": "/inktober2022/static/media/gargoyle.935b489eccbac804e176e3fb4b5fb50b.svg",
     "index.html": "/inktober2022/index.html",
-    "main.a945236b.css.map": "/inktober2022/static/css/main.a945236b.css.map",
-    "main.e7246251.js.map": "/inktober2022/static/js/main.e7246251.js.map",
+    "main.636d32e8.css.map": "/inktober2022/static/css/main.636d32e8.css.map",
+    "main.59d17724.js.map": "/inktober2022/static/js/main.59d17724.js.map",
     "787.2fb93474.chunk.js.map": "/inktober2022/static/js/787.2fb93474.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a945236b.css",
-    "static/js/main.e7246251.js"
+    "static/css/main.636d32e8.css",
+    "static/js/main.59d17724.js"
   ]
 }
