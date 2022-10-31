@@ -1,0 +1,87 @@
+#container30 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  image-rendering: pixelated;
+}
+#container30 #text {
+  color: white;
+  font-family: "Codec";
+  width: 40vw;
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  top: 60vh;
+  font-size: 3vh;
+  text-align: left;
+}
+#container30 #codec {
+  position: absolute;
+  --width: 50vw;
+  width: var(--width);
+  height: calc(var(--width) * 315 / 883);
+  top: 10vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  background-image: url("/public/day30/codec.png");
+  background-size: 100%;
+  --char-width: calc(var(--width) * 173 / 883);
+  --char-height: calc(var(--char-width) * 89 / 52);
+}
+#container30 #codec #codec-front {
+  position: absolute;
+  width: calc(var(--width) * 266 / 883);
+  height: calc(var(--width) * 158 / 883);
+  left: calc(var(--width) * 306 / 883);
+  top: calc(var(--width) * 76 / 883);
+  background-image: url("/public/day30/codec_front.png");
+  background-size: 100%;
+}
+#container30 #codec #radio {
+  position: absolute;
+  width: calc(var(--width) * 256 / 883);
+  height: calc(var(--width) * var(--lvl) * 85 / 883);
+  bottom: calc(var(--width) * 150 / 883);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(149, 253, 214);
+}
+#container30 #codec #snake {
+  position: absolute;
+  width: var(--char-width);
+  height: var(--char-height);
+  left: calc(var(--width) * 694 / 883);
+  top: calc(var(--width) * 8 / 883);
+  background-size: 100%;
+}
+#container30 #codec #colonel {
+  position: absolute;
+  width: var(--char-width);
+  height: var(--char-height);
+  left: calc(var(--width) * 11 / 883);
+  top: calc(var(--width) * 8 / 883);
+  background-size: 100%;
+}
+#container30 #call {
+  position: absolute;
+  --width: 30vw;
+  width: var(--width);
+  height: calc(var(--width) * 22 / 66);
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  animation: clignote 0.3s infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes clignote {
+  100% {
+    opacity: 0;
+  }
+}
+@font-face {
+  font-family: "Codec";
+  src: url("../../../fonts/FCRAFTBD.TTF") format("truetype");
+}
+
+/*# sourceMappingURL=Day30.css.map */

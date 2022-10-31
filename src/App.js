@@ -32,6 +32,7 @@ import {Day26} from "./pages/Week4/Day26/Day26";
 import {Day27} from "./pages/Week5/Day27/Day27";
 import {Day28} from "./pages/Week5/Day28/Day28";
 import {Day29} from "./pages/Week5/Day29/Day29";
+import {Day30} from "./pages/Week5/Day30/Day30";
 
 function App() {
 
@@ -79,7 +80,8 @@ function App() {
                     <Route path={'/ego'} element={<WithRoute component={<Day26/>}/>}/>
                     <Route path={'/snack'} element={<WithRoute component={<Day27/>}/>}/>
                     <Route path={'/camping'} element={<WithRoute component={<Day28/>}/>}/>
-                    <Route path={'/uhoh'} element={<WithRoute component={<Day29/>}/>}/>
+                    <Route path={'/uh-oh'} element={<WithRoute component={<Day29/>}/>}/>
+                    <Route path={'/gear'} element={<WithRoute component={<Day30/>}/>}/>
                 </>}
                 <Route path={'/'} element={<Home isMobile={isMobile}/>}/>
                 <Route path={'/*'} element={<Navigate to={'/'}/>}/>

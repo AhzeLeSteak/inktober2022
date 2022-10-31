@@ -43,7 +43,7 @@ function Home({isMobile}){
 
     const navigate = useNavigate();
     let i = 1;
-    themes.length = 29 + 2;
+    themes.length = 30 + 2;
 
 
     return <div>
@@ -62,7 +62,7 @@ function Home({isMobile}){
                 </>
                 :
                 themes.map((theme, j) =>
-                    <div key={j} className="card" onClick={() => navigate(theme.replace('-', '').replace(' ', ''))}>
+                    <div key={j} className="card" onClick={() => navigate(theme.replace(' ', ''))}>
                         {theme && <>{i++}.{theme}</>}
                     </div>
                 )
