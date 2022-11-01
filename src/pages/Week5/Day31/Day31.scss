@@ -1,0 +1,95 @@
+#container31{
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2d94fe;
+  image-rendering: pixelated;
+  #island{
+
+    position: absolute;
+    height: 100vh;
+    --width: calc(100vh * 1530 / 1080);
+    width: var(--width);
+    left: calc(50vw - var(--width) /  2);
+
+    background-image: url("/public/day31/background.png");
+    background-size: 100%;
+
+
+    .fish{
+      position: fixed;
+
+      width: calc(var(--width) * 32 / 1530);
+      height:calc(var(--width) * 32 / 1530);
+      background-size: 100%;
+      background-image: url("/public/day31/fish.png");
+      animation: oh_a_fish .3s linear infinite;
+    }
+    
+    #score{
+      position: absolute;
+      bottom:  calc(var(--width) * 18 / 1530);
+      left:  calc(var(--width) * 78 / 1530);
+      width: calc(var(--width) * 132 / 1530);
+      text-align: left;
+      font-size:  calc(var(--width) * 50 / 1530);
+      font-family: Forager;
+    }
+
+    .trap{
+      position: absolute;
+      width: calc(var(--width) * 67 / 1530);
+      height:calc(var(--width) * 67 / 1530);
+
+      background-image: url("/public/day31/fishtrap.png");
+      background-size: 100%;
+      animation: float 4s ease-in-out infinite;
+      left: calc(var(--width) * (71 * var(--x) + 288 ) / 1540);
+      top:  calc(var(--width) * (70 * var(--y) + 224 + 2) / 1540);
+
+      .caught{
+        position: absolute;
+        --caught-width: calc(var(--width) * 120 / 1530);
+        width: var(--caught-width);
+        height:calc(var(--caught-width) * 35 / 199);
+        bottom: calc(var(--width) * 77 / 1530);
+        left: calc(var(--width) * -22 / 1530);
+
+        background-image: url("/public/day31/caught.png");
+        background-size: 100%;
+        animation: caught 2s linear infinite;
+        z-index: 2;
+      }
+
+
+
+    }
+
+
+  }
+
+}
+
+@keyframes float {
+  50%{
+    transform: translateY(6px);
+  }
+}
+@keyframes caught {
+  50%{
+    transform: scale(1.4);
+  }
+}
+
+@keyframes oh_a_fish {
+  25% { transform: translate(calc(3*2px), -12px); }
+  50% { transform: translate(calc(3*4px), -16px); }
+  75% { transform: translate(calc(3*6px), -12px); }
+  100%{ transform: translate(calc(3*8px), 0px); }
+}
+
+@font-face {
+  font-family: "Forager";
+  src: url("../../../fonts/Computer Aid - Dker.ttf") format("truetype");
+}
